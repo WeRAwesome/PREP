@@ -1,0 +1,219 @@
+/* Base Styles
+===================================*/
+
+
+
+/* Layout Styles
+===================================*/
+section:not(:first-of-type),
+section:not(:nth-of-type(n2)) {
+  margin-top: 80px;
+}
+.section-two,
+.section-three,
+.section-four,
+footer {
+  margin-top: 80px;
+}
+
+
+/* globalnav / Navbar Styles
+===================================*/
+.globalnav {
+  background: transparent;
+  border-bottom: none;
+  padding: 30px 0 10px;
+  transition-duration: 0.6s;
+
+  display: none;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+
+.globalnav-nav{
+    margin: 7.5px -15px;
+}
+.globalnav-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+
+.globalnav-default .globalnav-brand,
+.globalnav-default .globalnav-nav>li>a {
+  color: #ffffff;
+}
+.globalnav-default .globalnav-nav>li {
+  margin-right: 8px;
+}
+
+.globalnav-default .globalnav-nav>li:last-of-type {
+  margin-right: 0;
+}
+.globalnav-default .globalnav-nav>li>a:hover,
+.globalnav-default .globalnav-nav>.active>a,
+.globalnav-default .globalnav-nav>.active>a:hover,
+.globalnav-default .globalnav-nav>.active>a:focus,
+.globalnav-default .globalnav-nav>.open>a,
+.globalnav-default .globalnav-nav>.open>a:hover,
+.globalnav-default .globalnav-nav>.open>a:focus {
+  background: rgba(24,53,50, 0.1);
+}
+.globalnav-toggle,
+.globalnav-default .globalnav-toggle:focus,
+.globalnav-default .globalnav-toggle:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Cover / Jumbotron Styles
+===================================*/
+section.cover {
+  position: relative;
+  padding-top: 70px;
+  background: url('../images/Home/PREP1_bcg2dark.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.prep-jumbotron {
+  align-self: center;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+  width: 90%;
+}
+img.cover {
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+
+/* section Styles
+===================================*/
+.section-two-content {
+  padding: 40px 20px;
+  color: #ffffff;
+  font-weight: 300;
+}
+.section-two-content h1 {
+  margin: 0 0 20px;
+}
+#section-two-left {
+  background: #183532;
+}
+#section-two-middle {
+  background: #244F4A;
+}
+#section-two-right {
+	background: #2A5C56;
+}
+.section-two,
+.section-four {
+	background: #fff;
+}
+
+.section-three {
+  background: #333;
+}
+
+
+/* CSS Image Styles
+===================================*/
+.css-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.img-designers,
+.img-developers {
+	height: 400px;
+	width: 400px;
+	background-position: center center;
+	background-size: cover;
+}
+.img-designers {
+	background: #183532;
+}
+.img-developers {
+	background: #2A5C56;
+}
+
+
+/* To Top Button Styles
+===================================*/
+.top-btn {
+  display: none;
+  background-color: #5C3359;
+  bottom: 2em;
+  color: #FFF;
+  opacity:0.8;
+  padding: 1.2em;
+  position: fixed;
+  right: 1.5em;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+.top-btn:hover {
+	opacity: 1;
+	transition: 1s;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* Helpers for top position on internal page links
+====================================================*/
+#spytop:before,
+section:before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+}
+
+
+/* Media Styles
+===================================*/
+@media (min-width: 480px) {
+	body {
+		font-size: 16px;
+	}
+}
+@media (min-width: 768px) {
+	.section-one-content {
+		padding: 40px 40px;
+	}
+}
+@media (min-width: 992px) {
+	.section-one-content {
+		padding: 40px 20px;
+	}
+}
+@media (min-width: 1200px) {
+	.section-one-content {
+		padding: 40px 40px;
+	}
+}
+
+/* jQuery Styles
+===================================*/
+.globalnav-scroll {
+	background: #ffffff;
+	padding: 0;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.6s;
