@@ -10,9 +10,8 @@ class SectionOne extends React.Component {
     return (
       <section className='cover' id='spytop'>
         <div className='jumbotron'>
-
           <img className='cover animated fadeInRightBig' src='../app/images/Home/PREP1_subtitlered.png' />
-          <img className='animated fadeInDownBig' src='../app/images/Home/PREP1_heading.png' />
+          <img className='animated fadeInDownBig' src='../app/images/Home/title.png' />
         </div>
       </section>
     )
