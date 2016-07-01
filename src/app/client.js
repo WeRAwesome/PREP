@@ -9,6 +9,7 @@ import Climatological from "./pages/Climatological";
 import Geophysical from "./pages/Geophysical";
 import HummanMade from "./pages/HummanMade";
 import Hydrological from "./pages/Hydrological";
+import etc from "./pages/etc";
 
 const app = document.getElementById('app');
 
@@ -21,6 +22,7 @@ ReactDOM.render(
             <Route path='/climato' component={Climatological} />
             <Route path='/bio' component={Biological} />
             <Route path='/manmade' component={HummanMade} />
+            <Route path='/etc' component={etc} />
         </Route>
     </Router>,
     app);

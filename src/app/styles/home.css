@@ -1,135 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
+
 /* Base Styles
 ===================================*/
+body {
+	color: #183532;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 1.8;
+    background-color: #fff;
+}
 
+img {
+  width: 100%;
+  height: auto;
+}
 
-
+Link {
+	color: #f00;
+	text-decoration: none;
+	background-color: transparent;
+}
 /* Layout Styles
 ===================================*/
 section:not(:first-of-type),
 section:not(:nth-of-type(n2)) {
-  margin-top: 80px;
+	margin-top: 80px;
 }
 .section-two,
 .section-three,
-.section-four,
 footer {
-  margin-top: 80px;
+	margin-top: 80px;
 }
 
 
-/* globalnav / Navbar Styles
+/* Nav / Navbar Styles
 ===================================*/
-.globalnav {
-  background: transparent;
-  border-bottom: none;
-  padding: 30px 0 10px;
-  transition-duration: 0.6s;
-
-  display: none;
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+.navbar {
+	background: transparent;
+	border-bottom: none;
+	padding: 30px 0 10px;
+	transition-duration: 0.6s;
 }
-
-
-.globalnav-nav{
-    margin: 7.5px -15px;
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
 }
-.globalnav-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 20px;
+.navbar-default .navbar-nav>li {
+	margin-right: 8px;
 }
-
-
-.globalnav-default .globalnav-brand,
-.globalnav-default .globalnav-nav>li>a {
-  color: #ffffff;
+.navbar-default .navbar-nav>li:last-of-type {
+	margin-right: 0;
 }
-.globalnav-default .globalnav-nav>li {
-  margin-right: 8px;
+.dropdown-menu,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+	background: rgba(24,53,50, 0.1);
 }
-
-.globalnav-default .globalnav-nav>li:last-of-type {
-  margin-right: 0;
+.dropdown-menu {
+	padding: 8px;
+	box-shadow: none;
+	border: none;
 }
-.globalnav-default .globalnav-nav>li>a:hover,
-.globalnav-default .globalnav-nav>.active>a,
-.globalnav-default .globalnav-nav>.active>a:hover,
-.globalnav-default .globalnav-nav>.active>a:focus,
-.globalnav-default .globalnav-nav>.open>a,
-.globalnav-default .globalnav-nav>.open>a:hover,
-.globalnav-default .globalnav-nav>.open>a:focus {
-  background: rgba(24,53,50, 0.1);
+.dropdown-menu li a {
+	padding: 4px 8px;
+	border-radius: 6px;
 }
-.globalnav-toggle,
-.globalnav-default .globalnav-toggle:focus,
-.globalnav-default .globalnav-toggle:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.8);
+.nav-dropdown-scroll {
+	background: #e7eaea;
+	box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
+}
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background: #fff;
 }
 
 
 /* Cover / Jumbotron Styles
 ===================================*/
 section.cover {
-  position: relative;
-  padding-top: 70px;
-  background: url('../images/Home/PREP1_bcg2dark.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
+
+	padding-top: 70px;
+	background: url('../images/Home/PREP1_bcg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
 }
-.prep-jumbotron {
-  align-self: center;
-  background: transparent;
-  color: #ffffff;
-  text-align: center;
-  width: 90%;
+.jumbotron {
+	align-self: center;
+	background: transparent;
+	color: #ffffff;
+	text-align: center;
+	width: 90%;
 }
+.jumbotron-btn {
+	background: #fff;
+	color: #111111;
+}
+.jumbotron-btn:hover {
+	background: rgb(24,53,50);
+	color: #fff;
+	border: 1px solid #fff;
+}
+
 img.cover {
-  left: 0;
-  top: 0;
   position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 70px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
 }
 
-/* section Styles
+/* Section Styles
 ===================================*/
-.section-two-content {
-  padding: 40px 20px;
-  color: #ffffff;
-  font-weight: 300;
+.main-title {
+	color: #fff;
+	font-size: 300px;
+	text-align: center;
 }
-.section-two-content h1 {
-  margin: 0 0 20px;
+.main-sub {
+	color: #f00;
+	font-size: 50px;
+	text-align: center;
 }
-#section-two-left {
-  background: #183532;
+.section-one-content {
+	padding: 40px 20px;
+	color: #ffffff;
+	font-weight: 300;
 }
-#section-two-middle {
-  background: #244F4A;
+.section-one-content h1 {
+	margin: 0 0 20px;
 }
-#section-two-right {
+#section-one-left {
+	background: #183532;
+}
+#section-one-middle {
+	background: #244F4A;
+}
+#section-one-right {
 	background: #2A5C56;
 }
+
 .section-two,
-.section-four {
+.section-three {
 	background: #fff;
 }
 
-.section-three {
-  background: #333;
-}
-
-
 /* CSS Image Styles
-===================================*/
+====================================================*/
 .css-img-wrapper {
     display: flex;
     flex-direction: column;
@@ -153,26 +180,29 @@ img.cover {
 }
 
 
+
 /* To Top Button Styles
 ===================================*/
-.top-btn {
-  display: none;
-  background-color: #5C3359;
-  bottom: 2em;
-  color: #FFF;
-  opacity:0.8;
-  padding: 1.2em;
-  position: fixed;
-  right: 1.5em;
-  text-decoration: none;
-  transition-duration: 1s;
+.top {
+	display: none;
+	background-color: #888;
+	bottom: 2em;
+	color: #FFF;
+	opacity:0.8;
+	padding: 1.2em;
+	position: fixed;
+	right: 1.5em;
+	text-decoration: none;
+	transition-duration: 1s;
 }
-.top-btn:hover {
+.top:hover {
 	opacity: 1;
 	transition: 1s;
 	text-decoration: none;
 	color: #fff;
 }
+
+
 
 
 /* Helpers for top position on internal page links
@@ -185,7 +215,6 @@ section:before {
   height: 100px;
   visibility: hidden;
 }
-
 
 /* Media Styles
 ===================================*/
@@ -210,10 +239,13 @@ section:before {
 	}
 }
 
+
 /* jQuery Styles
 ===================================*/
-.globalnav-scroll {
-	background: #ffffff;
+.navbar-scroll {
+	background: #000;
 	padding: 0;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 	transition-duration: 0.6s;
+	color: #fff;
+}

@@ -4,8 +4,7 @@ import BioNavbar from "../components/Biological/BioNavbar";
 class Biological extends React.Component {
   render () {
     return (
-      <div>
-        <BioNavbar />
+      <div className='jumbotron'>
         <h1>Biological Page</h1>
       </div>
     );
