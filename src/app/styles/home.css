@@ -11,8 +11,8 @@ body {
 }
 
 img {
-  width: 100%;
-  height: auto;
+	position: center center;
+
 }
 
 Link {
@@ -84,12 +84,11 @@ footer {
 /* Cover / Jumbotron Styles
 ===================================*/
 section.cover {
-
 	padding-top: 70px;
 	background: url('../images/Home/PREP1_bcg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 }
 .jumbotron {
@@ -146,8 +145,8 @@ img.cover {
 	background: url('../images/Home/S2_bcg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 80vh;
-	display: auto;
+	height: 100vh;
+	display: flex;
 	color: #000;
 }
 
@@ -159,7 +158,7 @@ img.cover {
 	background: url('../images/Home/S3_bcg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 70vh;;
+	height: 100vh;;
 	display: flex;
 	color: #fff;
 }
