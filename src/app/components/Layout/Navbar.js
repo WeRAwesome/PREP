@@ -52,11 +52,22 @@ class Navbar extends React.Component {
   }
 */
 class Navbar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+  }
+  asNavItems(navLists) {
+    const items = this.props.navLists;
+    return navLists.map((items) => {
+      return (
+        <li>
+          <Link key={items.id} to={items.to}>{items.title}</Link>
+        </li>
+      );
+    });
   }
   handleNavbar() {
-    const navbar = $('.navbar');
+    $(document).ready(function() {
+      const navbar = $('.navbar');
 
     	$(window).scroll(function(){
     		if($(window).scrollTop() <= 40){
@@ -72,7 +83,9 @@ class Navbar extends React.Component {
     		   navbar.addClass('navbar-scroll');
     	    }
     	});
+    });
   }
+
 
   render() {
     return (
@@ -93,12 +106,7 @@ class Navbar extends React.Component {
       			</div>
       			<div id="navbar" class="navbar-collapse collapse">
       				<ul className="nav navbar-nav navbar-right">
-                <li><Link to='/hydro'>HYDRO</Link></li>
-                <li><Link to='/geo'>GEO</Link></li>
-                <li><Link to='/climato'>CLIMATO</Link></li>
-                <li><Link to='/bio'>BIO</Link></li>
-                <li><Link to='/manmade'>MANMADE</Link></li>
-                <li><Link to='/etc'>ETC</Link></li>
+                { this.asNavItems(this.props.navList) }
       				</ul>
       			</div>
       		</div>
