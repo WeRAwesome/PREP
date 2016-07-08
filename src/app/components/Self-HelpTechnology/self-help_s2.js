@@ -16,26 +16,38 @@ class SelfHelpS2 extends Component {
         <div className="row">
           <div className="form-group col-sm-6 col-md-4 self-help-two-content">
             <div className="thumbnail">
-              <h3>How to Purify your Water</h3>
-              <img className="" src="../app/images/Self-HelpTechnology/PurifyWater_01.jpg" />
+              <h3>Get Pure Water</h3>
+              <img src="../app/images/Self-HelpTechnology/PurifyWater_02.jpg" />
             </div>
           </div>
           <div className="form-group col-sm-6 col-md-4 self-help-two-content">
             <div className="thumbnail">
-              <h3>How to Purify your Water</h3>
-              <img className="" src="../app/images/Self-HelpTechnology/PurifyWater_01.jpg" />
+              <h3>A liter of Light</h3>
+              <img src="../app/images/Self-HelpTechnology/Liter_of_Light_04.jpg" />
             </div>
           </div>
           <div className="form-group col-sm-6 col-md-4 self-help-two-content">
             <div className="thumbnail">
-              <h3>How to Purify your Water</h3>
-              <img className="" src="../app/images/Self-HelpTechnology/PurifyWater_01.jpg" />
+              <h3>LED Power Hack</h3>
+              <img src="../app/images/Self-HelpTechnology/Liter_of_Light_02.jpg" />
             </div>
           </div>
           <div className="form-group col-sm-6 col-md-4 self-help-two-content">
             <div className="thumbnail">
-              <h3>How to Purify your Water</h3>
-              <img className="" src="../app/images/Self-HelpTechnology/PurifyWater_01.jpg" />
+              <h3>Cook Stove</h3>
+              <img src="../app/images/Self-HelpTechnology/institutional_cookstove_main.jpg" />
+            </div>
+          </div>
+          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
+            <div className="thumbnail">
+              <h3>Solar Water Disinfection</h3>
+              <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_01.jpg" />
+            </div>
+          </div>
+          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
+            <div className="thumbnail">
+              <h3>Pot in Pot Cooler</h3>
+              <img src="../app/images/Self-HelpTechnology/Pot_in_Pot_Cooler_01.jpg" />
             </div>
           </div>
         </div>

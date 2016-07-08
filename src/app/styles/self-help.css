@@ -54,3 +54,7 @@ section.self-help {
   color: #808080;
   line-height: 130%;
 }
+
+.self-help-two-content .thumbnail img{
+  height: 380px;
+}
