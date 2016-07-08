@@ -1,7 +1,6 @@
-import React from "react";
-import BioNavbar from "../components/Biological/BioNavbar";
+import React, { Component } from 'react';
 
-class Biological extends React.Component {
+class Biological extends Component {
   render () {
     return (
       <section className="bio">

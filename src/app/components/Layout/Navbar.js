@@ -59,8 +59,8 @@ class Navbar extends React.Component {
     const items = this.props.navLists;
     return navLists.map((items) => {
       return (
-        <li>
-          <Link key={items.id} to={items.to}>{items.title}</Link>
+        <li key={items.title}>
+          <Link to={items.to}>{items.title}</Link>
         </li>
       );
     });

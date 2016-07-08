@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Geophysical extends React.Component {
+class Geophysical extends Component {
   render () {
     return (
       <div className='container'>

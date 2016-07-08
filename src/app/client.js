@@ -7,9 +7,9 @@ import Home from "./pages/Home";
 import Biological from "./pages/Biological";
 import Climatological from "./pages/Climatological";
 import Geophysical from "./pages/Geophysical";
-import HummanMade from "./pages/HummanMade";
+import HumanMade from "./pages/HumanMade";
 import Hydrological from "./pages/Hydrological";
-import etc from "./pages/etc";
+import SelfHelpTech from "./pages/Self-HelpTechnology";
 
 const app = document.getElementById('app');
 
@@ -21,8 +21,8 @@ ReactDOM.render(
             <Route path='/geo' component={Geophysical} />
             <Route path='/climato' component={Climatological} />
             <Route path='/bio' component={Biological} />
-            <Route path='/manmade' component={HummanMade} />
-            <Route path='/etc' component={etc} />
+            <Route path='/manmade' component={HumanMade} />
+            <Route path='/selfhelp' component={SelfHelpTech} />
         </Route>
     </Router>,
     app);

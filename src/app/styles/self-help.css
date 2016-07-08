@@ -1,0 +1,56 @@
+/* Cover /Jumbotron Styles
+========================================*/
+section.self-help {
+  padding-top: 70px;
+  background: url('../images/Home/S3_bcg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.self-help-jumbotron {
+  align-self: center;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+}
+.self-help-jumbtron-btn {
+  background: #fff;
+  color: #111111;
+}
+.self-help-jumbotron-btn:hover {
+  background: rgb(24,53,50);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.self-help-two h1 {
+  align-self: center;
+  color: #111111;
+  text-align: center;
+  text-shadow: 2px 2px #808080;
+  margin-top: 50px;
+}
+
+.self-help-two-info {
+  align-self: center;
+  color: #808080;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  line-height:160%;
+}
+
+.self-help-two-content h3{
+  padding: 10px;
+  margin-top: 10px;
+  align-self: center;
+  text-align: center;
+}
+
+.self-help-two-content h5 {
+  padding: 10px;
+  margin-top: 10px;
+  color: #808080;
+  line-height: 130%;
+}

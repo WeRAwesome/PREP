@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Climatological extends React.Component {
+class Climatological extends Component {
   render () {
     return (
       <div className='container'>

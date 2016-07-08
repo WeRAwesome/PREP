@@ -1,6 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Hydrological extends React.Component {
+class Hydrological extends Component {
   render () {
     return (
       <div className='container'>
