@@ -139,7 +139,7 @@ img.cover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	display: auto;
+	display: flex;
 	color: #000;
 }
 

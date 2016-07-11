@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
+import Modal from 'react-modal';
+
+const appElement = document.getElementById('self-help-two-content');
 
 class SelfHelpS2 extends Component {
+  constructor() {
+    super();
+
+    this.state = {modalIsOpen: false};
+  }
+
+  openModal() {
+    this.setState({ modalIsOpen: true });
+  }
+
+  afterOpenModal() {
+    this.refs.subtitle.style.color='#f00';
+  }
+
+  closeModal(){
+    this.setState({modalIsOpen: false });
+  }
   render () {
     return (
       <section className="container self-help-two">
@@ -17,8 +37,24 @@ class SelfHelpS2 extends Component {
           <div className="form-group col-sm-6 col-md-4 self-help-two-content">
             <div className="thumbnail">
               <h3>Get Pure Water</h3>
-              <img src="../app/images/Self-HelpTechnology/PurifyWater_02.jpg" />
+              <img src="../app/images/Self-HelpTechnology/PurifyWater_02.jpg" onClick={this.openModal} />
             </div>
+            <Modal
+              isOpen={this.state.modalIsOpen}
+              onAfterOpen={this.afterOpenModal}
+              onRequestClose={this.closeModal}>
+
+              <h2 ref="subtitle">Hello</h2>
+              <button onClick={this.closeModal}>close</button>
+              <div>I am a modal</div>
+              <form>
+                <input />
+                <button>tab navigation</button>
+                <button>stays</button>
+                <button>inside</button>
+                <button>the modal</button>
+              </form>
+            </Modal>
           </div>
           <div className="form-group col-sm-6 col-md-4 self-help-two-content">
             <div className="thumbnail">
