@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import { connect } from 'react-redux';
+import { selectAppropriate } from '../../actions/index';
+import { bindActionCreators } from 'redux';
 
 const appElement = document.getElementById('self-help-two-content');
 
 class SelfHelpS2 extends Component {
   constructor() {
     super();
-
-    this.state = {modalIsOpen: false};
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.openModal.bind(this);
   }
 
-  openModal() {
-    this.setState({ modalIsOpen: true });
+  openModal() { this.setState({ modalIsOpen: true }); }
+
+  closeModal() { this.setState({modalIsOpen: false }); }
+
+  appropriateList() {
+    return this.props.appropriateitems.map((appropriateitem) => {
+      return (
+        <div className="form-group col-sm-6 col-md-4 self-help-two-content">
+          <div className="thumbnail" >
+            <h3>{appropriateitem.title}</h3>
+            <img src="{appropriateitem.img}" />
+          </div>
+        </div>
+      );
+    });
   }
 
-  afterOpenModal() {
-    this.refs.subtitle.style.color='#f00';
-  }
-
-  closeModal(){
-    this.setState({modalIsOpen: false });
-  }
   render () {
     return (
       <section className="container self-help-two">
@@ -34,62 +43,20 @@ class SelfHelpS2 extends Component {
         </h4>
 
         <div className="row">
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail">
-              <h3>Get Pure Water</h3>
-              <img src="../app/images/Self-HelpTechnology/PurifyWater_02.jpg" onClick={this.openModal} />
-            </div>
-            <Modal
-              isOpen={this.state.modalIsOpen}
-              onAfterOpen={this.afterOpenModal}
-              onRequestClose={this.closeModal}>
-
-              <h2 ref="subtitle">Hello</h2>
-              <button onClick={this.closeModal}>close</button>
-              <div>I am a modal</div>
-              <form>
-                <input />
-                <button>tab navigation</button>
-                <button>stays</button>
-                <button>inside</button>
-                <button>the modal</button>
-              </form>
-            </Modal>
-          </div>
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail">
-              <h3>A liter of Light</h3>
-              <img src="../app/images/Self-HelpTechnology/Liter_of_Light_04.jpg" />
-            </div>
-          </div>
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail">
-              <h3>LED Power Hack</h3>
-              <img src="../app/images/Self-HelpTechnology/Liter_of_Light_02.jpg" />
-            </div>
-          </div>
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail">
-              <h3>Cook Stove</h3>
-              <img src="../app/images/Self-HelpTechnology/institutional_cookstove_main.jpg" />
-            </div>
-          </div>
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail">
-              <h3>Solar Water Disinfection</h3>
-              <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_01.jpg" />
-            </div>
-          </div>
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail">
-              <h3>Pot in Pot Cooler</h3>
-              <img src="../app/images/Self-HelpTechnology/Pot_in_Pot_Cooler_01.jpg" />
-            </div>
-          </div>
+          {this.appropriateList()}
         </div>
       </section>
     );
   }
 }
 
-export default SelfHelpS2;
+function mapStateToProps(state) {
+  return {
+    appropriateitems: state.appropriateitems
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectAppropriate: selectAppropriate }, dispatch);
+}
+export default connect(mapStateToProps, mapDispatchToProps)(SelfHelpS2);
