@@ -7,6 +7,7 @@ import { bindActionCreators } from 'redux';
 const appElement = document.getElementById('self-help-two-content');
 
 class SelfHelpS2 extends Component {
+  /*
   constructor() {
     super();
     this.openModal = this.openModal.bind(this);
@@ -16,14 +17,17 @@ class SelfHelpS2 extends Component {
   openModal() { this.setState({ modalIsOpen: true }); }
 
   closeModal() { this.setState({modalIsOpen: false }); }
-
-  appropriateList() {
-    return this.props.appropriateitems.map((appropriateitem) => {
+*/
+  appropriateList(appropriateitems) {
+    const item = this.props.appropriateitems;
+    return appropriateitems.map((item) => {
       return (
-        <div className="form-group col-sm-6 col-md-4 self-help-two-content">
-          <div className="thumbnail" >
-            <h3>{appropriateitem.title}</h3>
-            <img src="{appropriateitem.img}" />
+        <div key={item.id}>
+          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
+            <div className="thumbnail" >
+              <h3>{item.title}</h3>
+              <img src={item.img} />
+            </div>
           </div>
         </div>
       );

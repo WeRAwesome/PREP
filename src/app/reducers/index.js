@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import CategoriesReducer from './reducer_categories';
 //import ActiveCategory from './reducer_active_category';
-import Self-HelpTechReducer from './reducer_self-helpTech';
+import SelfHelpTechReducer from './reducer_self-helpTech';
 import { CATEGORY_SELECTED, APPROPRIATE_SELECTED } from '../actions/index';
 
 function ActiveCategory(state = null, action) {
@@ -10,7 +10,6 @@ function ActiveCategory(state = null, action) {
       return action.payload;
     }
       return state;
-  }
 }
 
 function ActiveAppropriateTech(state = null, action) {
@@ -21,15 +20,15 @@ function ActiveAppropriateTech(state = null, action) {
     return state;
 }
 
-const rootReducer = combineReducers([
+const rootReducer = combineReducers(
   {
     categories: CategoriesReducer,
     activeCategory: ActiveCategory
   },
   {
-    appropriateitems: Self-HelpTechReducer,
+    appropriateitems: SelfHelpTechReducer,
     activeAppropriateTech: ActiveAppropriateTech
   }
-]);
+);
 
 export default rootReducer;
