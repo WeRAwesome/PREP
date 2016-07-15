@@ -1,9 +1,9 @@
-export default function() {
+export default function categories() {
   return [
     {
       title: 'GEOPHYSICAL',
       parent_category: 'GEO',
-      to: '/geo',
+      to: 'geo',
       child_categories: [
         {
           category: 'Earthquake',
@@ -22,7 +22,7 @@ export default function() {
     {
       title: 'HYDROLOGICAL',
       parent_category: 'HYDRO',
-      to: '/hydro',
+      to: 'hydro',
       child_categories: [
         {
           category: 'Flood',
@@ -37,7 +37,7 @@ export default function() {
     {
       title: 'CLIMATOLOGICAL',
       parent_category: 'GlIMATO',
-      to: '/climato',
+      to: 'climato',
       child_categories: [
         {
           category: 'Extreme Temperature',
@@ -56,7 +56,7 @@ export default function() {
     {
       title: 'BIOLOGICAL',
       parent_category: 'BIO',
-      to: '/bio',
+      to: 'bio',
       child_categories: [
         {
           category: 'Epidemic',
@@ -75,13 +75,13 @@ export default function() {
     {
       title: 'MAN-MADE',
       parent_category: 'MANMADE',
-      to: '/manmade',
+      to: 'manmade',
       child_categories: []
     },
     {
       title: 'SELF-HELP TECHNOLOGY',
       parent_category: 'SELF-HELP TECH',
-      to: '/selfhelp',
+      to: 'selfhelp',
       child_categories: []
     }
   ];

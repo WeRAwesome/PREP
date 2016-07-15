@@ -5,22 +5,22 @@ import Footer from '../components/Layout/Footer';
 const navList = [
   {
     title: "HYDRO",
-    to: "/hydro"
+    to: "hydro"
   }, {
     title: "GEO",
-    to: "/geo"
+    to: "geo"
   }, {
     title: "CLIMATO",
-    to: "/climato"
+    to: "climato"
   }, {
     title: "BIO",
-    to: "/bio"
+    to: "bio"
   }, {
     title: "MANMADE",
-    to: "/manmade"
+    to: "manmade"
   }, {
     title: "SELF-HELP TECH",
-    to: "/selfhelp"
+    to: "selfhelp"
   }
 ];
 

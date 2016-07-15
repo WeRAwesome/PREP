@@ -18,18 +18,15 @@ class SelfHelpS2 extends Component {
 
   closeModal() { this.setState({modalIsOpen: false }); }
 */
-  appropriateList(appropriateitems) {
-    const item = this.props.appropriateitems;
-    return appropriateitems.map((item) => {
+  appropriateList() {
+    return this.props.appropriateitems.map((item) => {
       return (
-        <div key={item.id}>
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content">
+          <div  key={item.id} onClick={() => this.props.selectAppropriate(item)} className="form-group col-sm-6 col-md-4 self-help-two-content">
             <div className="thumbnail" >
               <h3>{item.title}</h3>
               <img src={item.img} />
             </div>
           </div>
-        </div>
       );
     });
   }

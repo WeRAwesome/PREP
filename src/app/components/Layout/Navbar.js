@@ -105,7 +105,7 @@ class Navbar extends React.Component {
       				<a className="navbar-brand" href="#">P.R.E.P</a>
       			</div>
       			<div id="navbar" class="navbar-collapse collapse">
-      				<ul className="nav navbar-nav navbar-right">
+      				<ul className="nav navbar-nav navbar-right w3-topnav">
                 { this.asNavItems(this.props.navList) }
       				</ul>
       			</div>
