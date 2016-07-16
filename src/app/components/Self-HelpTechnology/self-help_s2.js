@@ -4,28 +4,43 @@ import { connect } from 'react-redux';
 import { selectAppropriate } from '../../actions/index';
 import { bindActionCreators } from 'redux';
 
+
 const appElement = document.getElementById('self-help-two-content');
 
 class SelfHelpS2 extends Component {
-  /*
   constructor() {
     super();
+
+    this.state = { modalIsOpen: false };
     this.openModal = this.openModal.bind(this);
-    this.closeModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
-  openModal() { this.setState({ modalIsOpen: true }); }
+  openModal(id) {
+    this.setState({ modalIsOpen: id });
+  }
 
-  closeModal() { this.setState({modalIsOpen: false }); }
-*/
+  closeModal() { this.setState({ modalIsOpen: null }); }
+
   appropriateList() {
     return this.props.appropriateitems.map((item) => {
+      const ModalComponent = item.modal;
+      const handleOpenModal = () => this.openModal(item.id);
       return (
-          <div  key={item.id} onClick={() => this.props.selectAppropriate(item)} className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail" >
+          <div key={item.id} className="form-group col-sm-6 col-md-4 self-help-two-content">
+            <div className="thumbnail" onClick={handleOpenModal}>
               <h3>{item.title}</h3>
               <img src={item.img} />
             </div>
+            <Modal
+              isOpen={this.state.modalIsOpen === item.id}
+              onRequestClose={this.closeModal}
+              className="modal-content">
+              <ModalComponent />
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
+              </div>
+            </Modal>
           </div>
       );
     });

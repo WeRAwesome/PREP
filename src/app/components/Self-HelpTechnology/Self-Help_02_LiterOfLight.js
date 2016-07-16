@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
 
 class SelfHelp02LiterOfLight extends Component {
   render() {
@@ -217,6 +216,7 @@ class SelfHelp02LiterOfLight extends Component {
             </fieldset>
           </div>
         </div>
+
       </div>
     );
   }

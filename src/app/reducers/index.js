@@ -23,9 +23,8 @@ function ActiveAppropriateTech(state = null, action) {
 const rootReducer = combineReducers(
   {
     categories: CategoriesReducer,
-    activeCategory: ActiveCategory
-  },
-  {
+    activeCategory: ActiveCategory,
+
     appropriateitems: SelfHelpTechReducer,
     activeAppropriateTech: ActiveAppropriateTech
   }
