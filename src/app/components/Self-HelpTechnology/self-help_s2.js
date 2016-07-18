@@ -17,10 +17,19 @@ class SelfHelpS2 extends Component {
   }
 
   openModal(id) {
-    this.setState({ modalIsOpen: id });
+    this.setState({
+      modalIsOpen: id,
+      originalBodyOverflow: document.body.style.overflow
+    });
+    // Set overflow hidden so that the background doesn't scroll
+    //document.body.div.style.overflow = 'hidden';
   }
 
-  closeModal() { this.setState({ modalIsOpen: null }); }
+  closeModal() {
+    this.setState({ modalIsOpen: null });
+    // Set overflow back to original value
+    //document.body.style.overflow = this.state.originalBodyOverflow;
+  }
 
   appropriateList() {
     return this.props.appropriateitems.map((item) => {
@@ -32,15 +41,15 @@ class SelfHelpS2 extends Component {
               <h3>{item.title}</h3>
               <img src={item.img} />
             </div>
-            <Modal
-              isOpen={this.state.modalIsOpen === item.id}
-              onRequestClose={this.closeModal}
-              className="modal-content">
-              <ModalComponent />
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
-              </div>
-            </Modal>
+              <Modal
+                isOpen={this.state.modalIsOpen === item.id}
+                onRequestClose={this.closeModal}
+                className="modal-content">
+                <ModalComponent />
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
+                </div>
+              </Modal>
           </div>
       );
     });

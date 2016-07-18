@@ -89,6 +89,9 @@ section.self-help {
   z-index:1000;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
 /* Self-Help_01
 ==============================================*/
 .self-help_title {
