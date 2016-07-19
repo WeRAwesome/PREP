@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
-import Modal from 'react-modal';
 
-
-const appElement = document.getElementById('self-help-two-content');
-
-class ModalContent extends Component {
-  constructor() {
-    super();
-
-    this.state = { modalIsOpen: false };
-  }
-
-  openModal() {
-    this.setState = { modalIsOpen: true };
-  }
-  /*
-  afterOpenModal() {
-    this.refs.subtitle.style.color='#f00';
-  }
-  */
-  closeModal(){
-    this.setState = { modalIsOpen: false };
-  }
+export default class ModalHeader extends Component {
   render() {
     return (
-      <div></div>
+      <div className="modal-header">
+        {this.props.title}
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     );
   }
 }
 
-export default ModalContent;
+export default class ModalBody extends Component {
+  render() {
+    return (
+      <div className="modal-body">
+        {this.props.content}
+      </div>
+    );
+  }
+}
+
+export default class ModalFooter extends Component {
+  render() {
+    return (
+      <div className="modal-footer">
+        <button type="button" class="btn btn-default">Close</button>
+      </div>
+    );
+  }
+}

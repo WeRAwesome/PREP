@@ -5,9 +5,39 @@ import { selectAppropriate } from '../../actions/index';
 import { bindActionCreators } from 'redux';
 
 
-const appElement = document.getElementById('self-help-two-content');
+//const appElement = document.getElementById('self-help-two-content');
+const appElement = document.getElementById('app');
+
+const customStyles = {
+  overlay : {
+    position          : 'fixed',
+    top               : 0,
+    left              : 0,
+    right             : 0,
+    bottom            : 0,
+    backgroundColor   : 'rgba(255, 255, 255, 0.75)',
+    overflow          : 'hidden',
+    margin            : 0,
+    height            : '100%'
+  },
+  content : {
+    position                   : 'absolute',
+    top                        : 0,
+    left                       : 0,
+    right                      : 0,
+    bottom                     : 0,
+    border                     : '1px solid #ccc',
+    backgroundColor             : 'rgba(0, 0, 0, 0.8)',
+    overflow                   : 'auto',
+    WebkitOverflowScrolling    : 'touch',
+    outline                    : 'none',
+  }
+};
 
 class SelfHelpS2 extends Component {
+  componentDidMount() {
+
+  }
   constructor() {
     super();
 
@@ -19,16 +49,20 @@ class SelfHelpS2 extends Component {
   openModal(id) {
     this.setState({
       modalIsOpen: id,
-      originalBodyOverflow: document.body.style.overflow
+      originalBodyOverflow: appElement.style.overflow,
+      originalBodyPosition: appElement.style.position
     });
     // Set overflow hidden so that the background doesn't scroll
     //document.body.div.style.overflow = 'hidden';
+    appElement.style.overflow = 'hidden';
+    appElement.style.position = 'fixed';
   }
 
   closeModal() {
     this.setState({ modalIsOpen: null });
     // Set overflow back to original value
-    //document.body.style.overflow = this.state.originalBodyOverflow;
+    appElement.style.overflow = this.state.originalBodyOverflow;
+    appElement.style.position = this.state.originalBodyPosition;
   }
 
   appropriateList() {
@@ -36,21 +70,27 @@ class SelfHelpS2 extends Component {
       const ModalComponent = item.modal;
       const handleOpenModal = () => this.openModal(item.id);
       return (
-          <div key={item.id} className="form-group col-sm-6 col-md-4 self-help-two-content">
-            <div className="thumbnail" onClick={handleOpenModal}>
-              <h3>{item.title}</h3>
-              <img src={item.img} />
+          <div key={item.id}>
+            <div className="form-group col-sm-6 col-md-4 self-help-two-content">
+              <div className="thumbnail" onClick={handleOpenModal}>
+                <h3>{item.title}</h3>
+                <img src={item.img} />
+              </div>
             </div>
               <Modal
                 isOpen={this.state.modalIsOpen === item.id}
                 onRequestClose={this.closeModal}
-                className="modal-content">
-                <ModalComponent />
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
-                </div>
+                style={customStyles}>
+                <button type="button" class="close-button" data-dismiss="modal" onClick={this.closeModal}>&times;</button>
+                  <div className="modal-content">
+                    <ModalComponent />
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
+                    </div>
+                  </div>
+
               </Modal>
-          </div>
+            </div>
       );
     });
   }
