@@ -4,13 +4,11 @@ import { connect } from 'react-redux';
 import { selectAppropriate } from '../../actions/index';
 import { bindActionCreators } from 'redux';
 
-
-//const appElement = document.getElementById('self-help-two-content');
 const appElement = document.getElementById('app');
-
+const VIEWER_REF = 'VIEWER';
 const customStyles = {
   overlay : {
-    position          : 'fixed',
+    position          : 'static',
     top               : 0,
     left              : 0,
     right             : 0,
@@ -36,8 +34,9 @@ const customStyles = {
 
 class SelfHelpS2 extends Component {
   componentDidMount() {
-
+    this.refs[VIEWER_REF].getDOMNode().focus();
   }
+  
   constructor() {
     super();
 
@@ -53,7 +52,6 @@ class SelfHelpS2 extends Component {
       originalBodyPosition: appElement.style.position
     });
     // Set overflow hidden so that the background doesn't scroll
-    //document.body.div.style.overflow = 'hidden';
     appElement.style.overflow = 'hidden';
     appElement.style.position = 'fixed';
   }
@@ -71,7 +69,7 @@ class SelfHelpS2 extends Component {
       const handleOpenModal = () => this.openModal(item.id);
       return (
           <div key={item.id}>
-            <div className="form-group col-sm-6 col-md-4 self-help-two-content">
+            <div className="form-group col-sm-6 col-md-4 self-help-two-content" href="#self-help-two-content">
               <div className="thumbnail" onClick={handleOpenModal}>
                 <h3>{item.title}</h3>
                 <img src={item.img} />
@@ -88,7 +86,6 @@ class SelfHelpS2 extends Component {
                       <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
                     </div>
                   </div>
-
               </Modal>
             </div>
       );
@@ -107,7 +104,7 @@ class SelfHelpS2 extends Component {
             such as gas and electricity, water, food, and waste disposal.
         </h4>
 
-        <div className="row">
+        <div className="row" tabIndex="0" ref={VIEWER_REF}>
           {this.appropriateList()}
         </div>
       </section>
