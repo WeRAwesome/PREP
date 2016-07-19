@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SelfHelp01GetPureWater extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="modal.container ">
         <div className="self-help_title">
           <img src = "../app/images/Self-HelpTechnology/PurifyWater_main.jpg" alt="" width="1000" height="300" />
           <h1>How to Purify your Water</h1>

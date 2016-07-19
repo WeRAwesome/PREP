@@ -34,9 +34,6 @@ const customStyles = {
 };
 
 class SelfHelpS2 extends Component {
-  componentDidMount() {
-    this.refs.VIEWER_REF.focus();
-  }
 
   constructor() {
     super();
@@ -62,6 +59,7 @@ class SelfHelpS2 extends Component {
     // Set overflow back to original value
     appElement.style.overflow = this.state.originalBodyOverflow;
     appElement.style.position = this.state.originalBodyPosition;
+    this.refs.VIEWER_REF.focus();
   }
 
   appropriateList() {
@@ -80,12 +78,14 @@ class SelfHelpS2 extends Component {
                 isOpen={this.state.modalIsOpen === item.id}
                 onRequestClose={this.closeModal}
                 style={customStyles}>
+                <div>
                 <button type="button" class="close-button" data-dismiss="modal" onClick={this.closeModal}>&times;</button>
                   <div className="modal-content">
                     <ModalComponent />
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
                     </div>
+                  </div>
                   </div>
               </Modal>
             </div>
