@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import { connect } from 'react-redux';
 import { selectAppropriate } from '../../actions/index';
@@ -34,9 +35,9 @@ const customStyles = {
 
 class SelfHelpS2 extends Component {
   componentDidMount() {
-    this.refs[VIEWER_REF].getDOMNode().focus();
+    this.refs.VIEWER_REF.focus();
   }
-  
+
   constructor() {
     super();
 
@@ -104,7 +105,7 @@ class SelfHelpS2 extends Component {
             such as gas and electricity, water, food, and waste disposal.
         </h4>
 
-        <div className="row" tabIndex="0" ref={VIEWER_REF}>
+        <div className="row" tabIndex="0" ref="VIEWER_REF">
           {this.appropriateList()}
         </div>
       </section>
