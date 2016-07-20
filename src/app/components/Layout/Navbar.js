@@ -102,7 +102,7 @@ class Navbar extends React.Component {
       					<span className="icon-bar"></span>
       					<span className="icon-bar"></span>
       				</button>
-      				<a className="navbar-brand" href="#">P.R.E.P</a>
+      				<a className="navbar-brand" href="/">P.R.E.P</a>
       			</div>
       			<div id="navbar" class="navbar-collapse collapse">
       				<ul className="nav navbar-nav navbar-right w3-topnav">

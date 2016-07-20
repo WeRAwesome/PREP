@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SelfHelp06PotCooler extends Component {
   render() {
     return (
-      <div>
+      <div className="modal.container">
         SelfHelp06PotCooler
       </div>
     );

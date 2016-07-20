@@ -7,6 +7,7 @@ section.self-help {
   background-size: cover;
   height: 100vh;
   display: flex;
+  max-width: 100%;
 }
 .self-help-jumbotron {
   align-self: center;
@@ -15,18 +16,12 @@ section.self-help {
   text-align: center;
   width: 90%;
 }
-.self-help-jumbtron-btn {
-  background: #fff;
-  color: #111111;
-}
-.self-help-jumbotron-btn:hover {
-  background: rgb(24,53,50);
-  color: #fff;
-  border: 1px solid #fff;
-}
 
 /* self-help-two Styles
 ========================================*/
+.self-help-two {
+  padding-bottom: 130px;
+}
 .self-help-two h1 {
   align-self: center;
   color: #111111;
@@ -34,7 +29,6 @@ section.self-help {
   text-shadow: 2px 2px #808080;
   margin-top: 50px;
 }
-
 .self-help-two-info {
   align-self: center;
   color: #808080;
@@ -43,21 +37,18 @@ section.self-help {
   margin-bottom: 70px;
   line-height:160%;
 }
-
 .self-help-two-content h3{
   padding: 10px;
   margin-top: 10px;
   align-self: center;
   text-align: center;
 }
-
 .self-help-two-content h5 {
   padding: 10px;
   margin-top: 10px;
   color: #808080;
   line-height: 130%;
 }
-
 .self-help-two-content .thumbnail img{
   height: 380px;
 }
@@ -166,36 +157,6 @@ body.modal-open,
   z-index: 1040;
 }
 
-/* Slideshow Style */
-.help-self-slideshow {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-  transition: opacity 0.5s, visibility 0s 0.5s;
-  padding: 0;
-  background-color: #FFF;
-}
-.help-self-slideshow-open .help-self-slideshow {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-.help-self-popup-slide.animatable li {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-.help-self-slideshow-open .popup-slide {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
 /* Self-Help_01
 ==============================================*/
 .self-help_title {
@@ -240,7 +201,7 @@ body.modal-open,
 
 h3.sub-title {
   background-color: #ddd;
-  padding: 15px;
+  padding: 10px;
   border: 10px solid transparent;
   text-align: center;
   text-shadow: 2px 2px #fff;
@@ -256,7 +217,14 @@ fieldset.add-padding {
 
 .col-md-4 img {
   max-width:100%;
-  max-height:auto;
+}
+
+.col-md-8 img {
+  max-width:100%;
+}
+
+.col-md-6 img {
+  max-width: 100%;
 }
 
 /* video style

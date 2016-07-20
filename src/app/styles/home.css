@@ -33,19 +33,27 @@ footer {
 .navbar {
 	background: transparent;
 	border-bottom: none;
-	padding: 30px 0 10px;
+	padding: 20px 0 10px;
 	transition-duration: 0.6s;
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a {
 	color: #ddd;
+	padding: 10px 15px 10px;
 }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+	background: transparent;
+}
+/*
 .navbar-default .navbar-nav>li {
 	margin-right: 8px;
 }
 .navbar-default .navbar-nav>li:last-of-type {
 	margin-right: 0;
 }
+
 .dropdown-menu,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>.active>a,
@@ -56,6 +64,7 @@ footer {
 .navbar-default .navbar-nav>.open>a:focus {
 	background: rgba(24,53,50, 0.1);
 }
+
 .dropdown-menu {
 	padding: 8px;
 	box-shadow: none;
@@ -69,12 +78,13 @@ footer {
 	background: #e7eaea;
 	box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
 }
+
 .navbar-toggle,
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
 	background: #fff;
 }
-
+*/
 
 /* Cover / Jumbotron Styles
 ===================================*/
@@ -85,13 +95,19 @@ section.cover {
 	background-size: cover;
 	height: 100vh;
 	display: flex;
+	max-width: 100%;
 }
 .jumbotron {
 	align-self: center;
 	background: transparent;
 	color: #ffffff;
 	text-align: center;
-	width: 90%;
+	width: 100%;
+	margin-top: -100px;
+}
+.jumbotron img {
+	max-width: 100%;
+	padding: 0 20px;
 }
 .jumbotron-btn {
 	background: #fff;
@@ -125,7 +141,7 @@ img.cover {
 	text-align: center;
 }
 .section-two-content {
-	margin-top: 70px;
+	margin-top: 50px;
 	padding: 40px 20px;
 	color: #000;
 	font-weight: 300;
@@ -138,9 +154,11 @@ img.cover {
 	background: url('../images/Home/S2_bcg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: auto;
 	display: flex;
 	color: #000;
+	max-width: 100%;
+	padding: 30px;
 }
 
 .section-two h3 {
@@ -151,13 +169,15 @@ img.cover {
 	background: url('../images/Home/S3_bcg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;;
+	height: auto;;
 	display: flex;
 	color: #fff;
+	max-width: 100%;
+	padding: 30px;
 }
 .section-three-content {
-	margin-top: 70px;
-	padding: 40px 20px;
+	margin-top: 30px;
+	padding: 50px 20px 70px;
 	font-weight: 300;
 }
 .section-three h2 {
@@ -176,9 +196,10 @@ img.cover {
 	background: url('../images/Home/S2_bcg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: auto;
 	display: flex;
 	color: #000;
+	max-width: 100%''
 }
 
 /* CSS Image Styles
@@ -270,8 +291,8 @@ section:before {
 ===================================*/
 .navbar-scroll {
 	background: #000;
-	padding: 7px;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+	padding: 5px 0 5px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 	transition-duration: 0.6s;
 	color: #fff;
 }

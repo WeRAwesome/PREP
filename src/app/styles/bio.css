@@ -1,26 +1,11 @@
-/* Cover /Jumbotron Styles
+/* Cover /Jumbotron Styles For Bio
 ========================================*/
 section.bio {
   padding-top: 70px;
-  background: url('../images/Home/S3_bcg.png');
+  background: url('http://cdn.grindtv.com/wp-content/uploads/2013/07/cloud-of-mosquitos-.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
-}
-.bio-jumbotron {
-  align-self: center;
-  background: transparent;
-  color: #fff;
-  text-align: center;
-  width: 90%;
-}
-.bio-jumbtron-btn {
-  background: #fff;
-  color: #111111;
-}
-.bio-jumbotron-btn:hover {
-  background: rgb(24,53,50);
-  color: #fff;
-  border: 1px solid #fff;
+  max-width: 100%;
 }

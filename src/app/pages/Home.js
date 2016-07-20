@@ -17,7 +17,6 @@ class Home extends Component {
         <SectionOne />
         <SectionTwo />
         <SectionThree />
-        <SectionFour />
         <a href="#spytop" class="top"><span class="glyphicon glyphicon-chevron-up"></span></a>
       </div>
     );

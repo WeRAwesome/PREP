@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SelfHelp02LiterOfLight extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="modal.container">
         <div className="self-help_title">
           <img src = "../app/images/Self-HelpTechnology/Liter_of_Light_01.jpg" alt="" width="1000" height="300" />
           <h1>Liter of Light</h1>
@@ -211,7 +211,7 @@ class SelfHelp02LiterOfLight extends Component {
             </div>
             <div className="col-md-6">
               <br />
-              <a href="https://en.wikipedia.org/wiki/Liter_of_Light"><h2>Wikipedia: Liter of Light</h2></a>
+              <a href="https://en.wikipedia.org/wiki/Liter_of_Light"><h4>Wikipedia: Liter of Light</h4></a>
             </div>
             </fieldset>
           </div>

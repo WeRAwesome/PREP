@@ -4,7 +4,7 @@ class Biological extends Component {
   render () {
     return (
       <section className="bio">
-        <div className="bio-jumbotron">
+        <div className="jumbotron">
           <h1>Biological Page</h1>
         </div>
       </section>

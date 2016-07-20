@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SelfHelp01GetPureWater extends Component {
   render() {
     return (
-      <div className="modal.container ">
+      <div className="modal.container">
         <div className="self-help_title">
           <img src = "../app/images/Self-HelpTechnology/PurifyWater_main.jpg" alt="" width="1000" height="300" />
           <h1>How to Purify your Water</h1>
@@ -12,10 +12,10 @@ class SelfHelp01GetPureWater extends Component {
         <div className="self-help_01">
           <fieldset className="add-padding">
             <form className="form-group">
-              <h3 className="sub-title">Step 1</h3>
+              <h3 className="sub-title">Step 1: The Filter</h3>
               <div className="row">
                 <div className="col-md-8">
-                  <h3>The Filter</h3>
+                  <br />
                   <p>1) Remove the bottom of a bottle</p>
                   <p>2) Turn the bottle upsidedown (with the cap down down)</p>
                   <p>3) Put the follwing materials in the bottle.
@@ -39,13 +39,13 @@ class SelfHelp01GetPureWater extends Component {
           </form>
 
           <form className="form-group">
-            <h3 className="sub-title">Step 1</h3>
+            <h3 className="sub-title">Step 2: How to use your filter</h3>
             <div className="row">
               <div className="col-md-4">
                 <img src="../app/images/Self-HelpTechnology/PurifyWater_03.jpg" />
               </div>
               <div className="col-md-7">
-                <h3>How to use your filter</h3>
+                <br />
                 <p>Pour the water from the pool or pond in top of your water filter, catch the water at the bottom of the filter in a clean cup.</p>
                 <p>It is best to throw away the first bit of water that comes out of your filter it often is cloudy and not that clean.</p>
                 <p>If the water that comes out of your filter is clear it is good and you can use it.</p>

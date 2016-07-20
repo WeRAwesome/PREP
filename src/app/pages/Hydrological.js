@@ -3,9 +3,11 @@ import React, { Component } from "react";
 class Hydrological extends Component {
   render () {
     return (
-      <div className='container'>
-        <h1>Hydrological Page</h1>
-      </div>
+      <section className="hydro">
+        <div className="jumbotron">
+          <h1>Hydrological Page</h1>
+        </div>
+      </section>
     );
   }
 }

@@ -8,6 +8,7 @@ class SelfHelpTech extends Component {
       <div>
         <SelfHelpS1 />
         <SelfHelpS2 />
+        <a href="/selfhelp#spytop" class="selfhelp"><span class="glyphicon glyphicon-chevron-up"></span></a>
       </div>
     );
   }

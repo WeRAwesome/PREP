@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SelfHelp04CookStove extends Component {
   render(){
     return (
-      <div>
+      <div className="modal.container">
         SelfHelp04CookStove
       </div>
     );

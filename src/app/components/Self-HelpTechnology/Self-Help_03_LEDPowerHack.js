@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SelfHelp03LEDPowerHack extends Component {
   render() {
     return (
-      <div>
+      <div className="modal.container">
         SelfHelp03LEDPowerHack
       </div>
     );
