@@ -46,6 +46,12 @@ footer {
   color: #fff;
 	background: transparent;
 }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
 /*
 .navbar-default .navbar-nav>li {
 	margin-right: 8px;

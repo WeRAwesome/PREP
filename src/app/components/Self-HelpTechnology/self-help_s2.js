@@ -9,7 +9,7 @@ const appElement = document.getElementById('app');
 const VIEWER_REF = 'VIEWER';
 const customStyles = {
   overlay : {
-    position          : 'static',
+    position          : 'fixed',
     top               : 0,
     left              : 0,
     right             : 0,
@@ -63,7 +63,7 @@ class SelfHelpS2 extends Component {
   }
 
   appropriateList() {
-    return this.props.appropriateitems.map((item) => {
+      return this.props.appropriateitems.map((item) => {
       const ModalComponent = item.modal;
       const handleOpenModal = () => this.openModal(item.id);
       return (
@@ -78,14 +78,12 @@ class SelfHelpS2 extends Component {
                 isOpen={this.state.modalIsOpen === item.id}
                 onRequestClose={this.closeModal}
                 style={customStyles}>
-                <div>
                 <button type="button" class="close-button" data-dismiss="modal" onClick={this.closeModal}>&times;</button>
                   <div className="modal-content">
                     <ModalComponent />
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
                     </div>
-                  </div>
                   </div>
               </Modal>
             </div>

@@ -1,102 +1,53 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { IndexLink, Link } from 'react-router';
-import $ from 'jquery';
-import jQueryUI from 'jquery-ui';
-
-/*
-const navbar = document.getElementById('#navber');
-const top = document.getElementById('#top');
-const scroll_top = window.pageYOffset;
+import { connect } from 'react-redux';
+import { selectCategory } from '../../actions/index';
+import { bindActionCreators } from 'redux';
 
 class Navbar extends React.Component {
-  componentDidUpdate() {
-    var node = this.getDOMNode();
-    node.scrollTop = this.scrollTop + (node.scrollHeight - this.scrollHeight);
-    console.log(node.scrollTop);
-  }
-  componentWillUpdate() {
-    var node = this.getDOMNode();
-    this.scrollHeight = node.scrollHeight;
-    this.scrollTop = node.scrollTop;
-    if(this.scrollTop <= 40) {
-      navbar.removeClass("navbar-scroll");
-    }else {
-      navbar.addClass("navbar-scroll");
-    }
-  }
-
-  constructor(props) {
-    super(props);
-
+  constructor() {
+    super();
     this.state = {
-      collapsed: true,
-      scrollTop: 0
-    }
-  }
-  toggleCollapse() {
-    const collapsed = !this.state.collapsed;
-    this.setState({collapsed});
+      getScrollTop: 0,
+    };
+    this.myFunction = this.myFunction.bind(this);
   }
 
-  getScrollValue() {
-    this.setState({ scroll_top: window.pageYOffset });
-    console.log(scroll_top);
-    //return window.scrollY || window.pageYOffset || 0;
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+        this.myFunction();
+    });
   }
-  navbarChange() {
-    if (this.state.scroll_top <= 40) {
-      navbar.removeClass("navbar-scroll");
-    }else {
-      navbar.addClass("navbar-scroll");
-    }
+
+  myFunction() {
+    const getScrollTop = !this.state.getScrollTop;
+    const y = document.body.scrollTop;
+    this.setState({getScrollTop: y});
   }
-*/
-class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  asNavItems(navLists) {
-    const items = this.props.navLists;
-    return navLists.map((items) => {
+  
+  renderNavList() {
+    return this.props.categories.map((category) => {
       return (
-        <li key={items.title}>
-          <Link to={items.to}>{items.title}</Link>
+        <li key={category.title}>
+          <Link to={category.to}>{category.parent_category}</Link>
         </li>
       );
     });
   }
-  handleNavbar() {
-    $(document).ready(function() {
-      const navbar = $('.navbar');
-
-    	$(window).scroll(function(){
-    		if($(window).scrollTop() <= 40){
-    			navbar.removeClass('navbar-scroll');
-    			$('.top').hide();
-    		} else {
-    			navbar.addClass('navbar-scroll');
-    			$('.top').show();
-    		}
-    	});
-    	$('.navbar-toggle').click(function(){
-    		if($(window).scrollTop() <= 40){
-    		   navbar.addClass('navbar-scroll');
-    	    }
-    	});
-    });
-  }
-
 
   render() {
+    const { getScrollTop } = this.state;
+    const navClass = getScrollTop <= 40 ? "" : "navbar-scroll";
     return (
-      <div data-spy="scroll" data-target="#myScrollspy" class="">
+      <div data-spy="scroll" data-target="#myScrollspy">
       	{/* Fixed Nav */}
-      	<nav className="navbar navbar-default navbar-fixed-top" id="myScrollspy">
-        { this.handleNavbar() }
+      	<nav className={"navbar navbar-default navbar-fixed-top " + navClass}
+          id="myScrollspy">
       		<div className="container">
       			<div className="navbar-header">
       				<button type="button" className="navbar-toggle collapsed" data-toggle="collapse"
-                      data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      data-target="#navbar" aria-expanded="true" aria-controls="navbar">
       					<span className="sr-only">Toggle navigation</span>
       					<span className="icon-bar"></span>
       					<span className="icon-bar"></span>
@@ -106,7 +57,7 @@ class Navbar extends React.Component {
       			</div>
       			<div id="navbar" class="navbar-collapse collapse">
       				<ul className="nav navbar-nav navbar-right w3-topnav">
-                { this.asNavItems(this.props.navList) }
+                { this.renderNavList() }
       				</ul>
       			</div>
       		</div>
@@ -118,4 +69,13 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+function mapStateToProps(state) {
+  return {
+    categories: state.categories
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectCategory: selectCategory }, dispatch );
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);

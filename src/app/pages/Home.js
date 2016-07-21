@@ -5,12 +5,6 @@ import SectionThree from '../components/Home/SectionThree';
 import SectionFour from '../components/Home/SectionFour';
 
 class Home extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {};
-  }
-
   render () {
     return (
       <div>
