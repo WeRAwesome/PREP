@@ -11,21 +11,49 @@ class Navbar extends React.Component {
     this.state = {
       getScrollTop: 0,
     };
-    this.myFunction = this.myFunction.bind(this);
+    this.scrollY = this.scrollY.bind(this);
+    this.renderNavList = this.renderNavList.bind(this);
   }
 
   componentDidMount() {
+    const toggle = document.getElementById("toggle");
+    const myScrollspy = document.getElementById("myScrollspy");
+
     window.addEventListener('scroll', () => {
-        this.myFunction();
+      this.scrollY();
+    });
+
+    toggle.addEventListener('click', () => {
+      myScrollspy.classList.add("navbar-scroll");
+    });
+
+    myScrollspy.addEventListener('click', () => {
+      myScrollspy.classList.add("navbar-scroll");
     });
   }
 
-  myFunction() {
+  scrollY() {
     const getScrollTop = !this.state.getScrollTop;
     const y = document.body.scrollTop;
     this.setState({getScrollTop: y});
   }
-  
+
+  toggleButton() {
+    if(document.body.scrollTop <= 40) {
+      document.getElementById("myScrollspy").addclassName = "navbar-scroll";
+    };
+  }
+/*
+  renderLocalNavList() {
+    return this.props.categories.map((category) => {
+      return(
+        <nav>
+
+        </nav>
+      );
+    });
+  }
+  */
   renderNavList() {
     return this.props.categories.map((category) => {
       return (
@@ -42,11 +70,11 @@ class Navbar extends React.Component {
     return (
       <div data-spy="scroll" data-target="#myScrollspy">
       	{/* Fixed Nav */}
-      	<nav className={"navbar navbar-default navbar-fixed-top " + navClass}
+      	<nav className={"navbar navbar-default navbar-fixed-top " + navClass }
           id="myScrollspy">
       		<div className="container">
       			<div className="navbar-header">
-      				<button type="button" className="navbar-toggle collapsed" data-toggle="collapse"
+      				<button id="toggle" type="button" className="navbar-toggle collapsed" data-toggle="collapse"
                       data-target="#navbar" aria-expanded="true" aria-controls="navbar">
       					<span className="sr-only">Toggle navigation</span>
       					<span className="icon-bar"></span>

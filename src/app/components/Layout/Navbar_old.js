@@ -51,34 +51,34 @@ class Navbar extends React.Component {
               </Link>
             </li>
             <li className='ac-gn-item ac-gn-item-menu'>
-              <Link className='ac-gn-link' to='/hydro' data-analytics-title='hydro'>
+              <Link className='ac-gn-link' to='hydro' data-analytics-title='hydro'>
                 HYDRO
               </Link>
             </li>
             <li className='ac-gn-item ac-gn-item-menu'>
-              <Link className='ac-gn-link' to='/geo' data-analytics-title='geo'>
+              <Link className='ac-gn-link' to='geo' data-analytics-title='geo'>
                 GEO
               </Link>
             </li>
             <li className='ac-gn-item ac-gn-item-menu'>
-              <Link className='ac-gn-link' to='/climato' data-analytics-title='climate'>
+              <Link className='ac-gn-link' to='climato' data-analytics-title='climate'>
                 CLIMATO
               </Link>
             </li>
             <li className='ac-gn-item ac-gn-item-menu'>
-              <Link className='ac-gn-link' to='/bio' data-analytics-title='bio'>
+              <Link className='ac-gn-link' to='bio' data-analytics-title='bio'>
                 BIO
               </Link>
             </li>
             <li className='ac-gn-item ac-gn-item-menu'>
-              <Link className='ac-gn-link' to='/manmade' data-analytics-title='manmade'>
+              <Link className='ac-gn-link' to='manmade' data-analytics-title='manmade'>
                 MANMADE
               </Link>
             </li>
           </ul>
 
         </div>
-      </nav>  
+      </nav>
 
       </div>
     );

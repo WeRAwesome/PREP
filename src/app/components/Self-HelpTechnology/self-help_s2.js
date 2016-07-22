@@ -46,6 +46,7 @@ class SelfHelpS2 extends Component {
   openModal(id) {
     this.setState({
       modalIsOpen: id,
+      slideIndex: id,
       originalBodyOverflow: appElement.style.overflow,
       originalBodyPosition: appElement.style.position
     });
@@ -63,31 +64,33 @@ class SelfHelpS2 extends Component {
   }
 
   appropriateList() {
-      return this.props.appropriateitems.map((item) => {
+    return this.props.appropriateitems.map((item) => {
       const ModalComponent = item.modal;
       const handleOpenModal = () => this.openModal(item.id);
       return (
-          <div key={item.id}>
-            <div className="form-group col-sm-6 col-md-4 self-help-two-content" href="#self-help-two-content">
-              <div className="thumbnail" onClick={handleOpenModal}>
-                <h3>{item.title}</h3>
-                <img src={item.img} />
-              </div>
+        <div key={item.id}>
+          <div className="form-group col-sm-6 col-md-4 self-help-two-content" href="#self-help-two-content">
+            <div className="thumbnail" onClick={handleOpenModal}>
+              <h3>{item.title}</h3>
+              <img src={item.img} />
             </div>
-              <Modal
-                isOpen={this.state.modalIsOpen === item.id}
-                onRequestClose={this.closeModal}
-                style={customStyles}>
-                <button type="button" class="close-button" data-dismiss="modal" onClick={this.closeModal}>&times;</button>
-                  <div className="modal-content">
-                    <ModalComponent />
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
-                    </div>
+          </div>
+          <Modal
+            isOpen={this.state.modalIsOpen === item.id}
+            onRequestClose={this.closeModal}
+            style={customStyles}>
+              <button type="button" class="close-button" data-dismiss="modal" onClick={this.closeModal}>&times;</button>
+                <div className="modal-content">
+                  <ModalComponent />
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
                   </div>
-              </Modal>
-            </div>
-      );
+                </div>
+                <a className="w3-btn-floating" id="floating-left" onclick="{this.plusDivs(item.id -1)}">❮</a>
+                <a className="w3-btn-floating" id="floating-right" onclick="{this.plusDivs(item.id +1)}">❯</a>
+            </Modal>
+          </div>
+        );
     });
   }
 

@@ -250,3 +250,16 @@ fieldset.add-padding {
     padding-top: 35px;
     overflow: hidden;
 }
+
+/* Slide Float button
+================================*/
+#floating-left {
+  position:absolute;
+  top:45%;
+  left: 10px;
+}
+#floating-right {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
