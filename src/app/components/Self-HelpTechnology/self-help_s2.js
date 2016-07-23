@@ -46,7 +46,6 @@ class SelfHelpS2 extends Component {
   openModal(id) {
     this.setState({
       modalIsOpen: id,
-      slideIndex: id,
       originalBodyOverflow: appElement.style.overflow,
       originalBodyPosition: appElement.style.position
     });
@@ -62,11 +61,32 @@ class SelfHelpS2 extends Component {
     appElement.style.position = this.state.originalBodyPosition;
     this.refs.VIEWER_REF.focus();
   }
+/*
+  handleslide(id, modal) {
+    const floatingLeft = document.getElementById("floating-left");
+    const floatingRight = document.getElementById("floating-right");
+    this.setState({ currentId: id, currentModal: modal });
+    floatingLeft.addEventListener('click', () => {
+      if ( currentId > 1 ) {
+        this.setState({ prevId: currentId - 1});
 
+      } else {
+        currentModal: modal;
+      }
+    });
+    floatingRight.addEventListener('click', () => {
+      currentModal = id + 1;
+    });
+  }
+*/
   appropriateList() {
+    const { currentModal } = this.state;
     return this.props.appropriateitems.map((item) => {
       const ModalComponent = item.modal;
       const handleOpenModal = () => this.openModal(item.id);
+      const handleSlide = () => {
+        this.handleslide(item.id);
+      }
       return (
         <div key={item.id}>
           <div className="form-group col-sm-6 col-md-4 self-help-two-content" href="#self-help-two-content">
@@ -78,7 +98,8 @@ class SelfHelpS2 extends Component {
           <Modal
             isOpen={this.state.modalIsOpen === item.id}
             onRequestClose={this.closeModal}
-            style={customStyles}>
+            style={customStyles}
+            onChange={this.slide}>
               <button type="button" class="close-button" data-dismiss="modal" onClick={this.closeModal}>&times;</button>
                 <div className="modal-content">
                   <ModalComponent />
@@ -86,8 +107,8 @@ class SelfHelpS2 extends Component {
                     <button type="button" class="btn btn-default" onClick={this.closeModal}>Close</button>
                   </div>
                 </div>
-                <a className="w3-btn-floating" id="floating-left" onclick="{this.plusDivs(item.id -1)}">❮</a>
-                <a className="w3-btn-floating" id="floating-right" onclick="{this.plusDivs(item.id +1)}">❯</a>
+                <a className="w3-btn-floating" id="floating-left" onClick={handleSlide}>❮</a>
+                <a className="w3-btn-floating" id="floating-right" onClick={handleSlide}>❯</a>
             </Modal>
           </div>
         );
