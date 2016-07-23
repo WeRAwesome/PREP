@@ -10,9 +10,9 @@ class SelfHelp02LiterOfLight extends Component {
         </div>
 
         <div className="self-help_01 video-container">
-        <div className="video-youtube">
-          <iframe width="560" height="315" className="embed-responsive-item" src="https://www.youtube.com/embed/o-Fpsw_yYPg" frameborder="0" allowfullscreen></iframe>
-        </div>
+          <div className="video-youtube">
+            <iframe width="560" height="315" className="embed-responsive-item" src="https://www.youtube.com/embed/o-Fpsw_yYPg" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
 
         <div className="self-help_01">

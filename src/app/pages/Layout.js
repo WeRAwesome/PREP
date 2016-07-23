@@ -11,7 +11,7 @@ class Layout extends Component {
   render() {
     return (
       <div>
-        <Navbar history={this.props.history} />
+        <Navbar history={this.props.history} location={this.props.location} />
           {this.props.children}
         <Footer />
       </div>

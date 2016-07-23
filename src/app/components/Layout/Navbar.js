@@ -66,7 +66,13 @@ class Navbar extends React.Component {
 
   render() {
     const { getScrollTop } = this.state;
-    const navClass = getScrollTop <= 40 ? "" : "navbar-scroll";
+    const viewingMain = this.props.location.pathname === '/';
+    let navClass;
+    if (viewingMain) {
+      navClass = getScrollTop <= 40 ? "" : "navbar-scroll";
+    } else {
+      navClass = getScrollTop <= 40 ? "navbar-scroll" : "navbar-scroll--hide";
+    }
     return (
       <div data-spy="scroll" data-target="#myScrollspy">
       	{/* Fixed Nav */}
