@@ -33,12 +33,25 @@ const customStyles = {
   }
 };
 
+const state = {
+  currentSlide: 0,
+  appropriateitems: []
+};
+const actions = {
+  toggleNext() {
+    console.log("somthing worked togglenext");
+    const current = state.currentSlide;
+  }
+};
 class SelfHelpS2 extends Component {
-
   constructor() {
     super();
 
-    this.state = { modalIsOpen: false };
+    this.state = {
+      modalIsOpen: false,
+      currentSlide: 0,
+      appropriateitems: []
+    };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
@@ -61,24 +74,7 @@ class SelfHelpS2 extends Component {
     appElement.style.position = this.state.originalBodyPosition;
     this.refs.VIEWER_REF.focus();
   }
-/*
-  handleslide(id, modal) {
-    const floatingLeft = document.getElementById("floating-left");
-    const floatingRight = document.getElementById("floating-right");
-    this.setState({ currentId: id, currentModal: modal });
-    floatingLeft.addEventListener('click', () => {
-      if ( currentId > 1 ) {
-        this.setState({ prevId: currentId - 1});
 
-      } else {
-        currentModal: modal;
-      }
-    });
-    floatingRight.addEventListener('click', () => {
-      currentModal = id + 1;
-    });
-  }
-*/
   appropriateList() {
     const { currentModal } = this.state;
     return this.props.appropriateitems.map((item) => {
@@ -114,6 +110,25 @@ class SelfHelpS2 extends Component {
         );
     });
   }
+
+  /*
+    handleslide(id, modal) {
+      const floatingLeft = document.getElementById("floating-left");
+      const floatingRight = document.getElementById("floating-right");
+      this.setState({ currentId: id, currentModal: modal });
+      floatingLeft.addEventListener('click', () => {
+        if ( currentId > 1 ) {
+          this.setState({ prevId: currentId - 1});
+
+        } else {
+          currentModal: modal;
+        }
+      });
+      floatingRight.addEventListener('click', () => {
+        currentModal = id + 1;
+      });
+    }
+  */
 
   render () {
     return (

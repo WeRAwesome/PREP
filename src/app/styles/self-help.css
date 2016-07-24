@@ -97,7 +97,6 @@ div.overlay {
   z-index:1000;
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 
 .close-button {
@@ -215,6 +214,9 @@ fieldset.add-padding {
   padding-right: 1.5em;
 }
 
+form img {
+  max-width: 100%;
+}
 .col-md-4 img {
   max-width:100%;
 }

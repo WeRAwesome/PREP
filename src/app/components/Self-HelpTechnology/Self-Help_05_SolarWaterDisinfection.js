@@ -24,13 +24,13 @@ class SelfHelp05SolarWaterDisinfection extends Component {
                   <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_01.jpg" />
                 </div>
                 <div className="col-md-6">
-                  <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_02.jpg" />
+                  <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_03.jpg" />
                 </div>
               </div>
             </form>
 
             <form className="form-group">
-              <img src="../app/images/Self-HelpTechnology/Liter_of_Light_06.jpg" />
+              <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_02.jpg" />
             </form>
 
           </fieldset>
