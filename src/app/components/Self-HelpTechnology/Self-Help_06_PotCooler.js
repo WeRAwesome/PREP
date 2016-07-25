@@ -20,7 +20,9 @@ class SelfHelp06PotCooler extends Component {
                 </div>
                 <div className="col-md-6">
                   <h3>Obtain two large clay or terracotta pots</h3>
-                  <p>(One pot must be smaller than the other pot. Check that the smaller pot fits inside the larger and that there is a space around it of at least one centimetre, up to three centimetres.)</p>
+                  <p>(One pot must be smaller than the other pot. Check that the
+                    smaller pot fits inside the larger and that there is a space
+                    around it of at least one centimetre, up to three centimetres.)</p>
                 </div>
               </div>
             </form>
