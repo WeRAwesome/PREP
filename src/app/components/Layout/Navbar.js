@@ -5,16 +5,16 @@ import { connect } from 'react-redux';
 import { selectCategory } from '../../actions/index';
 import { bindActionCreators } from 'redux';
 
-import LocalNavbar from './Local_Navbar';
-
 class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
       getScrollTop: 0,
+      isSelected: false
     };
     this.scrollY = this.scrollY.bind(this);
     this.renderNavList = this.renderNavList.bind(this);
+    this.renderChildNavList = this.renderChildNavList.bind(this);
   }
 
   componentDidMount() {
@@ -27,10 +27,12 @@ class Navbar extends React.Component {
 
     toggle.addEventListener('click', () => {
       myScrollspy.classList.add("navbar-scroll");
+      this.renderChildNavList();
     });
 
     myScrollspy.addEventListener('click', () => {
       myScrollspy.classList.add("navbar-scroll");
+      this.renderChildNavList();
     });
   }
 
@@ -40,24 +42,39 @@ class Navbar extends React.Component {
     this.setState({getScrollTop: y});
   }
 
-  toggleButton() {
-    if(document.body.scrollTop <= 40) {
-      document.getElementById("myScrollspy").addclassName = "navbar-scroll";
-    };
-  }
-/*
-  renderLocalNavList() {
-    return this.props.categories.map((category) => {
-      return(
-        <nav>
+  // toggleButton() {
+  //   if(document.body.scrollTop <= 40) {
+  //     document.getElementById("myScrollspy").addclassName = "navbar-scroll";
+  //   };
+  // }
 
-        </nav>
-      );
-    });
+  // handleClick(title) {
+  //   this.setState({ isSelected: title });
+  // }
+
+  renderChildNavList() {
+    // const { isSelected } = this.props;
+    // return this.props.categories.map((category) => {
+    //   this.handleClick = () => this.handleClick(category.title);
+    //   if( isSelected === category.title) {
+    //    console.log(category.child_categories.category);
+    //     return (
+    //       <div class="container-fluid">
+    //         <div className="navbar-header">
+    //           <a className="navbar-brand" href="#">{category.title}</a>
+    //         </div>
+    //         <ul className="nav navbar-nav">
+    //           <li><a href="#">{category.child_categories.category}</a></li>
+    //         </ul>
+    //       </div>
+    //     );
+    //   }
+    // });
   }
-  */
+
   renderNavList() {
     return this.props.categories.map((category) => {
+      //const { isSelected } = this.state.category.title;
       return (
         <li key={category.title}>
           <Link to={category.to}>{category.parent_category}</Link>
@@ -98,9 +115,12 @@ class Navbar extends React.Component {
       			</div>
       		</div>
       	</nav>
-
+        <div>
+          <nav id="localnav" class="ac-localnav-scrim">
+            {this.renderChildNavList()}
+          </nav>
+        </div>
       	{ /*Close Fixed Nav */	}
-
       </div>
     );
   }
