@@ -12,21 +12,12 @@ function ActiveCategory(state = null, action) {
       return state;
 }
 
-function ActiveAppropriateTech(state = null, action) {
-  switch(action.type) {
-    case APPROPRIATE_SELECTED:
-      return action.payload;
-  }
-    return state;
-}
-
 const rootReducer = combineReducers(
   {
     categories: CategoriesReducer,
     activeCategory: ActiveCategory,
 
-    appropriateitems: SelfHelpTechReducer,
-    activeAppropriateTech: ActiveAppropriateTech
+    appropriateitems: SelfHelpTechReducer
   }
 );
 

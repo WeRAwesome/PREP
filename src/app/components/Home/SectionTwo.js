@@ -18,9 +18,8 @@ class SectionTwo extends React.Component {
             <div className="col-md-4 section-two-content" id="section-two-right">
               <h3><strong className="text-red">P.R.E.P. </strong>(Pre-pared Responses and Emergency Planning)
               aims to raise awaremess for disaster preparedness and emergency planning with succint,
-              self-ex-planatory visual guides, and to <h3 className="text-red">increase resilience of local
+              self-ex-planatory visual guides, and to </h3><h3 className="text-red">increase resilience of local
               community in coping with disasters, haxards and other catastrophics events.</h3>
-              </h3>
             </div>
           </div>
         </section>

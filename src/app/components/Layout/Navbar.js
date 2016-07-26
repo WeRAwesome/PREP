@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { selectCategory } from '../../actions/index';
 import { bindActionCreators } from 'redux';
 
+import LocalNavbar from './Local_Navbar';
+
 class Navbar extends React.Component {
   constructor() {
     super();
@@ -96,6 +98,7 @@ class Navbar extends React.Component {
       			</div>
       		</div>
       	</nav>
+
       	{ /*Close Fixed Nav */	}
 
       </div>
