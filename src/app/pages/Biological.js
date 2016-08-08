@@ -1,13 +1,13 @@
-import React from "react";
-import BioNavbar from "../components/Biological/BioNavbar";
+import React, { Component } from 'react';
 
-class Biological extends React.Component {
+class Biological extends Component {
   render () {
     return (
-      <div>
-        <BioNavbar />
-        <h1>Biological Page</h1>
-      </div>
+      <section className="bio">
+        <div className="jumbotron">
+          <h1>Biological Page</h1>
+        </div>
+      </section>
     );
   }
 }

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Climatological extends React.Component {
+class Climatological extends Component {
   render () {
     return (
-      <div className='container'>
-        <h1>Climatological Page</h1>
-      </div>
+      <section className="climato">
+        <div className="jumbotron">
+          <h1>Climatological Page</h1>
+        </div>
+      </section>
     );
   }
 }
