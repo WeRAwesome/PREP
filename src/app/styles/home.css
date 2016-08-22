@@ -159,20 +159,17 @@ img.cover {
 }
 .section-two-content h1 {
 	margin: 0 0 20px;
+	font-size: 45px;
 }
 
 .section-two {
-	background: url('../images/Home/S2_bcg.png');
+	background: url('../images/Home/S2_bcg.jpg');
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
-	width: 100%;
+	height: 160vh;
 	display: flex;
-	color: #000;
 	max-width: 100%;
-	padding-top: 70px;
-	padding-bottom: 200px;
 }
 
 .section-two-img {
@@ -194,6 +191,12 @@ img.cover {
 	display: inline-block;
 	float: left;
 	padding: 5px;
+}
+
+.verticalLine {
+  border-left: 5px solid #cccccc;
+	margin-left: 50px;
+	height: 100px;
 }
 
 .w3-btn-floating {
@@ -244,13 +247,13 @@ img.cover {
 	width: 100%;
 }
 .section-four {
-	background: url('../images/Home/S2_bcg.png');
+	background: url('../images/Home/S2_bcg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: auto;
 	display: flex;
 	color: #000;
-	max-width: 100%''
+	max-width: 100%;
 }
 
 /* CSS Image Styles
