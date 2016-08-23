@@ -162,24 +162,24 @@ img.cover {
 	font-size: 45px;
 }
 
+.section-two-speaker {
+	position: absolute;
+	float: left;
+}
+
 .section-two {
 	background: url('../images/Home/S2_bcg.jpg');
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 160vh;
+	height: 100vh;
 	display: flex;
 	max-width: 100%;
 }
 
-.section-two-img {
-	position: absolute;
-	left: 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
-	display: flex;
-	max-width: 100%;
+.section-two-img img{
+	float: left;
+	margin: 10px 10px 10px 0;
 }
 
 .section-two h3 {
