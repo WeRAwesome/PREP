@@ -10,7 +10,7 @@ class SectionTwo extends React.Component {
       				<h1 text-align="right"><strong>What</strong> is</h1>
       			</div>
             <div className="col-md-4 section-two-content" id="section-two-middle">
-              <img src="../app/images/Home/prep.png" height="70%" width="70%" />
+              <img src="../app/images/Home/prep.png" height="80%" width="80%" />
             </div>
             <div className="col-md-4 section-two-content section-two-img" id="section-two-right">
               <h3><img src="../app/images/Home/Icon_speaker.png" /><strong className="text-red">P.R.E.P. </strong>(Pre-pared Responses and Emergency Planning)
