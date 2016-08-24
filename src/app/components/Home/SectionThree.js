@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class SectionThree extends React.Component {
+class SectionThree extends Component {
   render(){
     return (
       <div className="section-three">
@@ -31,6 +31,25 @@ class SectionThree extends React.Component {
                 <h1><img src="../app/images/Home/XMLID_4041_.png" /><strong> Get a Kit</strong></h1>
               </div>
             </div>
+            <div className="col-md-offset-4 col-md-2">
+              <div className="verticalLine"></div>
+            </div>
+            <div className="row">
+              <div className="col-md-offset-3 col-md-9 section-three-images">
+                <img src="../app/images/Home/svcguide.png" />
+                <img src="../app/images/Home/XMLID_225_.png" />
+              </div>
+            </div>
+            <div className="col-md-offset-4 col-md-2">
+              <div className="verticalLine-middle-grey"></div>
+              <div className="verticalLine-small-black"></div>
+              <h2 id="section-three-h2"><strong>For</strong></h2>
+              <div className="verticalLine-small-black"></div>
+              <div className="verticalLine-middle-grey-last section-three-images">
+                <img src="../app/images/Home/svcguide.png" />
+              </div>
+            </div>
+
           </div>
         </section>
       </div>

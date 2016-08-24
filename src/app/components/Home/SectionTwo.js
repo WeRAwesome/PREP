@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class SectionTwo extends React.Component {
+class SectionTwo extends Component {
   render(){
     return (
       <div className="section-two">
@@ -10,7 +10,7 @@ class SectionTwo extends React.Component {
       				<h1 text-align="right"><strong>What</strong> is</h1>
       			</div>
             <div className="col-md-4 section-two-content" id="section-two-middle">
-              <img src="../app/images/Home/prep.png" height="80%" width="80%" />
+              <img src="../app/images/Home/prep.png" />
             </div>
             <div className="col-md-4 section-two-content section-two-img" id="section-two-right">
               <h3><img src="../app/images/Home/Icon_speaker.png" /><strong className="text-red">P.R.E.P. </strong>(Pre-pared Responses and Emergency Planning)
@@ -26,9 +26,3 @@ class SectionTwo extends React.Component {
 }
 
 export default SectionTwo;
-/*
-<a className="w3-btn-floating" id="floating-button">P</a><h3>repared</h3>
-<a className="w3-btn-floating" id="floating-button">R</a><h3>esponses</h3>
-<a className="w3-btn-floating" id="floating-button">E</a><h3>mergency</h3>
-<a className="w3-btn-floating" id="floating-button">P</a><h3>lanning</h3>
-*/
