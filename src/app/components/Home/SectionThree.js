@@ -8,39 +8,51 @@ class SectionThree extends Component {
           <h1 className="section-three-title"><strong>3 Essential Steps</strong></h1>
           <div className="section-three-content">
             <div className="row">
-              <div className="col-md-3 section-three-person">
-                <img src="../app/images/Home/person.png" />
+              <div className="col-md-5 section-three-overlap">
+                <div className="section-three-img-hover">
+                  <img id="section-three-person" src="../app/images/Home/person.png" />
+                  <img src="../app/images/Home/XMLID_13_.png" />
+                </div>
+                <h1><strong>STEP </strong><img id="section-three-step3" src="../app/images/Home/1.png" /></h1>
               </div>
-              <div className="col-md-9 section-three-images">
-                <h1><strong>STEP </strong><img src="../app/images/Home/1.png" />
-                <img src="../app/images/Home/XMLID_271_.png" /><strong> Be Informed</strong></h1>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-offset-3 col-md-9 section-three-images">
-                <h1><strong>STEP </strong><img src="../app/images/Home/2.png" />
-                <img src="../app/images/Home/XMLID_4053_.png" /><strong> Make a Plan</strong></h1>
+              <div className="col-md-7 section-three-step3">
+                <h1><img src="../app/images/Home/XMLID_271_.png" /><strong> Be Informed</strong></h1>
               </div>
             </div>
             <div className="row">
-              <div className="col-md-offset-2 col-md-4 section-three-overlap">
-                <h1><img src="../app/images/Home/XMLID_13_.png" />
-                <strong>STEP </strong><img id="section-three-step3" src="../app/images/Home/3.png" /></h1>
+              <div className="col-md-5 section-three-overlap">
+                <div className="section-three-img-hover">
+                  <img id="section-three-person" src="../app/images/Home/person.png" />
+                  <img src="../app/images/Home/XMLID_13_.png" />
+                </div>
+                <h1><strong>STEP </strong><img id="section-three-step3" src="../app/images/Home/2.png" /></h1>
               </div>
-              <div className="col-md-6 section-three-step3">
+              <div className="col-md-7 section-three-step3">
+                <h1><img src="../app/images/Home/XMLID_4053_.png" /><strong> Make a Plan</strong></h1>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-5 section-three-overlap">
+                <div className="section-three-img-hover">
+                  <img id="section-three-person" src="../app/images/Home/person.png" />
+                  <img src="../app/images/Home/XMLID_13_.png" />
+                </div>
+                <h1><strong>STEP </strong><img id="section-three-step3" src="../app/images/Home/3.png" /></h1>
+              </div>
+              <div className="col-md-7 section-three-step3">
                 <h1><img src="../app/images/Home/XMLID_4041_.png" /><strong> Get a Kit</strong></h1>
               </div>
             </div>
-            <div className="col-md-offset-4 col-md-2">
+            <div className="col-md-offset-3 col-md-2">
               <div className="verticalLine"></div>
             </div>
             <div className="row">
-              <div className="col-md-offset-3 col-md-9 section-three-images">
+              <div className="col-md-offset-2 col-md-9 section-three-images">
                 <img src="../app/images/Home/svcguide.png" />
                 <img src="../app/images/Home/XMLID_225_.png" />
               </div>
             </div>
-            <div className="col-md-offset-4 col-md-2">
+            <div className="col-md-offset-3 col-md-2">
               <div className="verticalLine-middle-grey"></div>
               <div className="verticalLine-small-black"></div>
               <h2 id="section-three-h2"><strong>For</strong></h2>

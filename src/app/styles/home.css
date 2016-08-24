@@ -244,34 +244,42 @@ img.cover {
 }
 
 .section-three-images img{
-	padding: 10px 40px 10px;
+	padding: 2% 8% 2%;
 	align-self: center;
 }
 
-.section-three-person img {
-	margin: 60px 10px 50px;
-	float: right;
-	width: 80px;
-	height: 70px;
+#section-three-person {
+	position: relative;
+	margin: 10% 0 10% 10%;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+div.section-three-img-hover {
+	opacity: 0;
+}
+div.section-three-img-hover:hover{
+	opacity: 100;
 }
 .section-three-overlap img{
 	position: absolute;
-	right: 15px;
-	top: 30px;
-	z-index: -1;
+	right: 3%;
+	top: 10%;
+	z-index: 1;
 }
 .section-three-overlap h1 {
 	align-self: center;
 	align-content: center;
-	margin: 85px 40px 50px 100px;
+	margin: 15% 8% 15% 40%;
+
 }
 .section-three-step3 img {
-	margin: 10px 40px 10px 10px;
+	margin: 2% 8% 2% 2%;
 	align-self: center;
 }
 #section-three-step3 {
 	align-self: center;
-	padding: 30px 30px 30px;
+	padding: 6% 6% 6%;
 }
 .section-three h2 {
 	line-height:200%;
