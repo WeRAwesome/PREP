@@ -288,23 +288,23 @@ img.cover {
 .verticalLine {
   border-left: 3px solid #cccccc;
 	margin-left: 70px;
-	height: 150px;
+	height: 100px;
 }
 .verticalLine-small-black {
 	border-left: 6px solid #000000;
 	margin-left: 68px;
-	height: 40px;
+	height: 20px;
 }
 .verticalLine-middle-grey {
   border-left: 3px solid #cccccc;
 	margin-left: 70px;
-	height: 70px;
+	height: 40px;
 }
 .verticalLine-middle-grey-last {
   border-left: 3px solid #cccccc;
 	margin-left: 70px;
 	height: 100px;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 .verticalLine-middle-grey-last img {
 	margin: 10px 40px 10px 10px;
