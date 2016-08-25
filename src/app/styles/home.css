@@ -100,15 +100,33 @@ footer {
 /* Cover / Jumbotron Styles
 ** section-one
 ===================================*/
+/*
 section.cover {
 	padding-top: 70px;
 	background: url('../images/Home/Landing.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: 840px;
 	display: flex;
 	max-width: 100%;
 }
+*/
+.section-one {
+	padding-top: 70px;
+	background: url('../images/Home/Landing.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 840px;
+	display: flex;
+	max-width: 100%;
+}
+.section-one-title {
+	align-self: center;
+	text-align: center;
+	margin: 18% 5% 19%;
+	max-width: 100%;
+}
+/*
 .jumbotron {
 	align-self: center;
 	background: transparent;
@@ -130,7 +148,7 @@ section.cover {
 	color: #fff;
 	border: 1px solid #fff;
 }
-
+*/
 img.cover {
   position: absolute;
   top: 0;
@@ -142,6 +160,11 @@ img.cover {
   display: flex;
 }
 
+.section-one-arrow {
+	align-self: center;
+	text-align: center;
+	max-width: 100%;
+}
 /* Section Styles
 ===================================*/
 .main-title {
