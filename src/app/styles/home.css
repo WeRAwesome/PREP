@@ -98,6 +98,7 @@ footer {
 */
 
 /* Cover / Jumbotron Styles
+** section-one
 ===================================*/
 section.cover {
 	padding-top: 70px;
@@ -151,6 +152,9 @@ img.cover {
 	font-size: 50px;
 	text-align: center;
 }
+
+/* section-two Styles
+====================================================*/
 .section-two-content {
 	margin-top: 50px;
 	padding: 40px 20px;
@@ -221,6 +225,9 @@ img.cover {
 .text-red {
 	color: #f00;
 }
+
+/* section-three Styles
+====================================================*/
 .section-three {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -265,7 +272,7 @@ div.section-three-img-hover:hover{
 	position: absolute;
 	right: 3%;
 	top: 10%;
-	z-index: 1;
+	z-index: 4;
 }
 .section-three-overlap h1 {
 	align-self: center;
@@ -280,6 +287,7 @@ div.section-three-img-hover:hover{
 #section-three-step3 {
 	align-self: center;
 	padding: 6% 6% 6%;
+	z-index: -1;
 }
 .section-three h2 {
 	line-height:200%;
@@ -322,6 +330,20 @@ div.section-three-img-hover:hover{
 	align-self: center;
 	text-align: center;
 }
+#section-three-hooktext1 {
+	align-self: center;
+	margin: 65% 0 0 -20%;
+}
+#section-three-hooktext2 {
+	align-self: center;
+	margin: 30% 0 0 -5%;
+}
+#section-three-hooktext3 {
+	align-self: center;
+	margin: 55% 0 0 -15%;
+}
+/* section-four Styles
+====================================================*/
 .section-four {
 	background: url('../images/Home/S2_bcg.jpg');
 	background-repeat: no-repeat;
