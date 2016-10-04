@@ -8,11 +8,16 @@ class SectionOne extends React.Component {
 
   render(){
     return (
-      <section className='cover' id='spytop'>
-        <div className='jumbotron'>
-          <img className='animated fadeInDownBig' src='../app/images/Home/title.png' />
-        </div>
-      </section>
+      <div className="section-one" id="spytop">
+        <section className="container">
+          <div className="section-one-title">
+            <img className="animated fadeInDownBig" src="../app/images/Home/title.png" />
+          </div>
+          <div className="section-one-arrow">
+            <img src="../app/images/Home/arrow.png" />
+          </div>
+        </section>
+      </div>
     )
   }
 }
