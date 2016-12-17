@@ -1,20 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 /* Base Styles
 ===================================*/
-body {
-	color: #183532;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	line-height: 1.8;
-  background-color: #fff;
-}
 
-Link {
-	color: #f00;
-	text-decoration: none;
-	background-color: transparent;
-}
 /* Layout Styles
 ===================================*/
 section:not(:first-of-type),
@@ -116,7 +104,7 @@ section.cover {
 	background: url('../images/Home/Landing.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 840px;
+	height: 100vh;
 	display: flex;
 	max-width: 100%;
 }
