@@ -15,7 +15,7 @@ class SectionOne extends React.Component {
             <h1 className="home-title">P. R. E. P.</h1>
           </div>
           <div className="section-one-arrow">
-            <img src="../app/images/Home/arrow.png" width="50px" height="50px" />
+            <img src="../public/style/images/Home/arrow.png" width="50px" height="50px" />
           </div>
         </section>
       </div>

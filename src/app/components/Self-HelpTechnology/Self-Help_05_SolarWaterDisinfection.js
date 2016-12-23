@@ -21,16 +21,16 @@ class SelfHelp05SolarWaterDisinfection extends Component {
             <form className="form-group">
               <div className="row">
                 <div className="col-md-6">
-                  <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_01.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Solar_Water_Disinfection_01.jpg" />
                 </div>
                 <div className="col-md-6">
-                  <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_03.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Solar_Water_Disinfection_03.jpg" />
                 </div>
               </div>
             </form>
 
             <form className="form-group">
-              <img src="../app/images/Self-HelpTechnology/Solar_Water_Disinfection_02.jpg" />
+              <img src="../public/style/images/Self-HelpTechnology/Solar_Water_Disinfection_02.jpg" />
             </form>
 
           </fieldset>

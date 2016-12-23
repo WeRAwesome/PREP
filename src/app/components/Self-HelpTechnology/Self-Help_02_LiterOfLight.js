@@ -5,7 +5,7 @@ class SelfHelp02LiterOfLight extends Component {
     return (
       <div className="modal.container">
         <div className="self-help_title">
-          <img src = "../app/images/Self-HelpTechnology/Liter_of_Light_01.jpg" alt="" width="1000" height="300" />
+          <img src = "../public/style/images/Self-HelpTechnology/Liter_of_Light_01.jpg" alt="" width="1000" height="300" />
           <h1>Liter of Light</h1>
         </div>
 
@@ -29,7 +29,7 @@ class SelfHelp02LiterOfLight extends Component {
               </p>
             </div>
             <div className="col-md-4">
-              <img src="../app/images/Self-HelpTechnology/Liter_of_Light_03.jpg" />
+              <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_03.jpg" />
             </div>
           </fieldset>
         </div>
@@ -41,7 +41,7 @@ class SelfHelp02LiterOfLight extends Component {
               <h3 className="sub-title">Step 1: Cut GI sheet</h3>
               <div className="row">
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_05.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_05.jpg" />
                 </div>
                 <div className="col-md-8">
                   <br />
@@ -55,13 +55,13 @@ class SelfHelp02LiterOfLight extends Component {
               <p>At the center of the GI sheet, draw 2 circels</p>
               <div className="row">
               <div className="col-md-4">
-                <img src="../app/images/Self-HelpTechnology/Liter_of_Light_06.jpg" />
+                <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_06.jpg" />
               </div>
               <div className="col-md-4">
-                <img src="../app/images/Self-HelpTechnology/Liter_of_Light_07.jpg" />
+                <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_07.jpg" />
               </div>
               <div className="col-md-4">
-                <img src="../app/images/Self-HelpTechnology/Liter_of_Light_08.jpg" />
+                <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_08.jpg" />
               </div>
               </div>
             </form>
@@ -74,7 +74,7 @@ class SelfHelp02LiterOfLight extends Component {
                   <p>Cut the 1 cm difference radially, making strips and bend upwards, perpendicular to the GI sheet</p>
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_09.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_09.jpg" />
                 </div>
               </div>
             </form>
@@ -83,7 +83,7 @@ class SelfHelp02LiterOfLight extends Component {
               <h3 className="sub-title">Step 4</h3>
               <div className="row">
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_10.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_10.jpg" />
                 </div>
                 <div className="col-md-8">
                   <br />
@@ -97,13 +97,13 @@ class SelfHelp02LiterOfLight extends Component {
               <p>Insert the bottle into the GI sheet until the upper third. Apply rubber sealant on the strips above and around the area below. Wait to dry.</p>
               <div className="row">
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_11.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_11.jpg" />
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_12.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_12.jpg" />
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_13.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_13.jpg" />
                 </div>
               </div>
             </form>
@@ -113,10 +113,10 @@ class SelfHelp02LiterOfLight extends Component {
               <p>Fill the soda bottle with filtered water an ~10 mL (2 capfuls) of bleach. Cover with its original cap.</p>
               <div className="row">
                 <div className="col-md-8">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_14.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_14.jpg" />
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_15.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_15.jpg" />
                 </div>
               </div>
             </form>
@@ -126,10 +126,10 @@ class SelfHelp02LiterOfLight extends Component {
               <p>The solar bottle bulb is now ready for installation!</p>
               <div className="row">
                 <div className="col-md-8">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_16.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_16.jpg" />
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_17.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_17.jpg" />
                 </div>
               </div>
             </form>
@@ -142,7 +142,7 @@ class SelfHelp02LiterOfLight extends Component {
                   <p>Cut a hole on the roof, similar to the bottle circumference</p>
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_18.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_18.jpg" />
                 </div>
               </div>
             </form>
@@ -151,10 +151,10 @@ class SelfHelp02LiterOfLight extends Component {
               <h3 className="sub-title">Step 9</h3>
               <div className="row">
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_19.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_19.jpg" />
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_20.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_20.jpg" />
                 </div>
                 <div className="col-md-4">
                   <br />
@@ -171,7 +171,7 @@ class SelfHelp02LiterOfLight extends Component {
                   <p>Drill 4 holes on each side of the solar bottle bulb using Bosch lithium-ion cordless drill and put in the rivets</p>
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_21.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_21.jpg" />
                 </div>
               </div>
             </form>
@@ -180,7 +180,7 @@ class SelfHelp02LiterOfLight extends Component {
               <h3 className="sub-title">Step 11</h3>
               <div className="row">
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_22.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_22.jpg" />
                 </div>
                 <div className="col-md-8">
                   <br />
@@ -197,7 +197,7 @@ class SelfHelp02LiterOfLight extends Component {
                   <p>Place a protective plastic tube on the bottle cap and apply rubber sealant.</p>
                 </div>
                 <div className="col-md-4">
-                  <img src="../app/images/Self-HelpTechnology/Liter_of_Light_23.jpg" />
+                  <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_23.jpg" />
                 </div>
               </div>
             </form>
@@ -207,7 +207,7 @@ class SelfHelp02LiterOfLight extends Component {
           <div className="self-help_01">
             <fieldset className="add-padding">
             <div className="col-md-6">
-              <img src="../app/images/Self-HelpTechnology/Liter_of_Light_01.jpg" />
+              <img src="../public/style/images/Self-HelpTechnology/Liter_of_Light_01.jpg" />
             </div>
             <div className="col-md-6">
               <br />
