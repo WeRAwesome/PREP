@@ -5,7 +5,7 @@ class SelfHelp01GetPureWater extends Component {
     return (
       <div className="modal.container">
         <div className="self-help_title">
-          <img src = "../app/images/Self-HelpTechnology/PurifyWater_main.jpg" alt="" width="1000" height="300" />
+          <img src = "../public/style/images/Self-HelpTechnology/PurifyWater_main.jpg" alt="" width="1000" height="300" />
           <h1>How to Purify your Water</h1>
         </div>
 
@@ -32,8 +32,8 @@ class SelfHelp01GetPureWater extends Component {
                   <p>This filter will not remove any viruses and bacteria from the water so you have to boil the water after it is filtered.</p>
                 </div>
               <div className="col-md-4">
-                <img src="../app/images/Self-HelpTechnology/PurifyWater_01.jpg" />
-                <img src="../app/images/Self-HelpTechnology/PurifyWater_02.jpg" />
+                <img src="../public/style/images/Self-HelpTechnology/PurifyWater_01.jpg" />
+                <img src="../public/style/images/Self-HelpTechnology/PurifyWater_02.jpg" />
               </div>
             </div>
           </form>
@@ -42,7 +42,7 @@ class SelfHelp01GetPureWater extends Component {
             <h3 className="sub-title">Step 2: How to use your filter</h3>
             <div className="row">
               <div className="col-md-4">
-                <img src="../app/images/Self-HelpTechnology/PurifyWater_03.jpg" />
+                <img src="../public/style/images/Self-HelpTechnology/PurifyWater_03.jpg" />
               </div>
               <div className="col-md-7">
                 <br />
