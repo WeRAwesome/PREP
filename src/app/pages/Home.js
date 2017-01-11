@@ -9,8 +9,10 @@ class Home extends Component {
     return (
       <div>
         <SectionOne />
-        <SectionTwo />
-        <SectionThree />
+        <div className="section-two-three-background">
+          <SectionTwo />
+          <SectionThree />
+        </div>
       </div>
     );
   }

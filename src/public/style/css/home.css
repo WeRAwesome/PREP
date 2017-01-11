@@ -102,12 +102,13 @@ section.cover {
 .section-one {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background: url('../images/Home/Landing-01.jpg');
+	background: url('../images/Home/Landing/Landing_header1.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: inline-block;
-  height: 700px;
+  height: 70vh;
 	width: 100%;
+	top: 0;
 }
 .section-one-title {
 	align-self: center;
@@ -176,7 +177,14 @@ img.cover {
 	font-size: 50px;
 	text-align: center;
 }
-
+.section-two-three-background {
+	background: url('../images/Home/Landing/Landing_bcg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 200vh;
+	width: 100%;
+}
 /* section-two Styles
 ====================================================*/
 .section-two-content {

@@ -106,7 +106,9 @@ class Navbar extends React.Component {
       					<span className="icon-bar"></span>
       					<span className="icon-bar"></span>
       				</button>
-      				<a className="navbar-brand" href="/">P.R.E.P</a>
+      				<a className="navbar-brand" href="/">
+                <img src="../public/style/images/Home/Landing/Landing_sm_logo.svg" width="80px" height="25px" />
+              </a>
       			</div>
       			<div id="navbar" class="navbar-collapse collapse">
       				<ul className="nav navbar-nav navbar-right w3-topnav">
