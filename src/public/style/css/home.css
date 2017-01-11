@@ -8,8 +8,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
-	height: 20vh;
-	margin-bottom: 50px;
+	height: 200px;
+}
+.footer {
+	display: block;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+	background-color: #191919;
+	text-align: right;
+	padding-top: 30px;
 }
 /* Layout Styles
 ===================================*/

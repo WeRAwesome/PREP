@@ -37,14 +37,17 @@ class Footer extends React.Component {
     //const { getScrollTop } = this.state;
     //const topButton = getScrollTop <= 40 ? "" : "top";
     return (
-      <footer>
-        <a href="#spytop" className="top" id="topbutton"><span clasName="glyphicon glyphicon-chevron-up"></span></a>
-        <div className='container'>
-          <div className='row'>
-            <p className='text-right'> © 2016 P.R.E.P </p>
+      <div>
+        <div className="home-footer" />
+        <div className="footer">
+          <a href="#spytop" className="top" id="topbutton"><span clasName="glyphicon glyphicon-chevron-up"></span></a>
+          <div className='container'>
+            <div className='row'>
+              <p className='text-right'> © 2016 P.R.E.P </p>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
     );
   }
 }
