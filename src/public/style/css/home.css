@@ -250,8 +250,10 @@ img.cover {
 	padding: 5px;
 }
 .section-two-middle {
-	max-width: 80%;
-	max-height: 80%;
+	max-width: 100%;
+	width: 200px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
 }
 .w3-btn-floating {
 	position: absolute;
@@ -271,6 +273,7 @@ img.cover {
 .section-two-text {
 	font-size: 18px;
 	line-height: 1.8;
+	margin-bottom: 20px;
 }
 .section-two-text-red, .section-two-text-red-title {
 	color: #f00;
@@ -281,6 +284,7 @@ img.cover {
 .section-two-text-whatis {
 	text-align: right;
 	right: 10%;
+	padding-bottom: 10px;
 }
 .section-two-four-col {
 	margin-bottom: 25px;
@@ -290,6 +294,7 @@ img.cover {
 	align-self: flex-start;
 	-webkit-align-items: flex-start;
 	-webkit-align-self: flex-start;
+	right: 10px;
 }
 .section-two-four-col-step {
 	max-width: 100%;
@@ -300,7 +305,8 @@ img.cover {
 .section-two-four-col-img {
 	max-width: 100%;
 	padding-top: 10px;
-	width: 90px;
+	width: 120px;
+	padding-right: 30px;
 }
 .section-two-person {
 	max-width: 100%;
@@ -315,10 +321,10 @@ img.cover {
 	width: 130px;
 	margin-left: 25px;
 }
-div.section-two-img-hover {
+.section-two-four .section-two-img-hover {
 	opacity: 0;
 }
-div.section-two-img-hover:hover{
+.section-two-four .section-two-img-hover:hover{
 	opacity: 100;
 }
 .section-two-overlap img{
@@ -330,6 +336,49 @@ div.section-two-img-hover:hover{
 	max-width: 100%;
 	width: 80px;
 	margin-right: 25px;
+}
+/* section-rwo media-query Styles
+====================================================*/
+@media (max-width: 799px) {
+	.section-two-text-whatis {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.section-two-two {
+		left: 35%;
+	}
+	.section-two-four {
+		left: 28%;
+	}
+}
+@media (max-width: 650px) {
+	.section-two-two {
+		left: 28%;
+	}
+	.section-two-four {
+		left: 20%;
+	}
+}
+@media (max-width: 500px) {
+	.section-two-two {
+		left: 23%;
+	}
+	.section-two-four {
+		left: 10%;
+	}
+}
+@media (max-width: 375px) {
+	.section-two-two {
+		left: 15%;
+	}
+	.section-two-four {
+		left: 0;
+	}
+}
+@media (max-width: 320px) {
+	.section-two-two {
+		left: 5%;
+	}
 }
 /* section-three Styles
 ====================================================*/

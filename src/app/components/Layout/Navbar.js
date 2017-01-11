@@ -38,7 +38,7 @@ class Navbar extends React.Component {
 
   scrollY() {
     const getScrollTop = !this.state.getScrollTop;
-    const y = document.body.scrollTop;
+    const y = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     this.setState({getScrollTop: y});
   }
 

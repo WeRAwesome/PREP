@@ -39,13 +39,13 @@ class SectionTwo extends Component {
     return (
       <section className="container">
         <div className="row section-two-content">
-          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <div className="col-sm-2 col-md-2 col-lg-2">
             <h1 className="section-two-text-whatis"><strong>What</strong> is</h1>
           </div>
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div className="col-sm-3 col-md-3 col-lg-3 section-two-two">
             <img className="section-two-middle" src="../public/style/images/Home/prep.png" />
           </div>
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 section-two-img section-two-text">
+          <div className="col-sm-3 col-md-3 col-lg-3 section-two-img section-two-text">
             <h2>
               <img src="../public/style/images/Home/Icon_speaker.png" />
               <strong className="section-two-text-red-title">P.R.E.P.</strong>
@@ -54,7 +54,7 @@ class SectionTwo extends Component {
             self-ex-planatory visual guides, and to </span><span className="section-two-text-red">increase resilience of local
             community in coping with disasters, haxards and other catastrophics events.</span>
           </div>
-          <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <div className="col-sm-4 col-md-4 col-lg-4 section-two-four">
             {this.createFourCol()}
             <div className="section-two-four-col">
               <img className="section-two-four-col-last" src="../public/style/images/Home/svcguide.png" />
