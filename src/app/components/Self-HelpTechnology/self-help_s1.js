@@ -5,7 +5,6 @@ class SelfHelpS1 extends Component {
     return (
       <section className="self-help">
         <div className="self-help-jumbotron">
-          <h1>Self-Help Technology Page</h1>
         </div>
       </section>
     );
