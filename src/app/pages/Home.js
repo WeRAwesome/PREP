@@ -13,6 +13,7 @@ class Home extends Component {
           <SectionTwo />
           <SectionThree />
         </div>
+        <div className="home-footer" />
       </div>
     );
   }

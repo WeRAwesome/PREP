@@ -2,7 +2,15 @@
 
 /* Base Styles
 ===================================*/
-
+/* footer */
+.home-footer {
+	background: url('../images/Home/footer.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: 20vh;
+	margin-bottom: 50px;
+}
 /* Layout Styles
 ===================================*/
 section:not(:first-of-type),
@@ -186,13 +194,13 @@ img.cover {
 	text-align: center;
 }
 .section-two-three-background {
-	background: url('../images/Home/Landing/Landing_bcg.svg');
+	background: url('../images/Home/S2_bcg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: inline-block;
 	height: auto;
 	width: 100%;
-	margin-bottom: 40px;
+	padding-bottom: 40px;
 }
 /* section-two Styles
 ====================================================*/
@@ -318,21 +326,23 @@ div.section-two-img-hover:hover{
 /* section-three Styles
 ====================================================*/
 .section-three {
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: auto;
-	display: flex;
 	color: #000;
-	max-width: 100%;
-	margin: 50px;
 	padding-bottom: 50px;
 }
 .section-three-title{
 	align-self: center;
-	color: #111111;
 	text-align: center;
-	text-shadow: 2px 2px #808080;
-	font-size: 60px;
+	font-weight: 700;
+	font-size: 35px;
+}
+.section-three-description {
+	text-align: center;
+	font-size: 17px;
+}
+.section-three-disaster-category-img {
+	margin-top: 30px;
+	max-width: 100%;
+	width: 150px;
 }
 .section-three-content {
 	padding: 50px 20px 70px;
