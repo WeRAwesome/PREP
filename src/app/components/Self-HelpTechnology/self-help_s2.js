@@ -85,7 +85,7 @@ class SelfHelpS2 extends Component {
       }
       return (
         <div key={item.id}>
-          <div className="form-group col-sm-6 col-md-4 self-help-two-content" href="#self-help-two-content">
+          <div className="form-group col-sm-4 col-md-4 self-help-two-content" href="#self-help-two-content">
             <div className="thumbnail" onClick={handleOpenModal}>
               <h3>{item.title}</h3>
               <img src={item.img} />
@@ -132,18 +132,20 @@ class SelfHelpS2 extends Component {
 
   render () {
     return (
-      <section className="container self-help-two">
-        <h1><strong>Appropriate Technology</strong></h1>
-        <hr></hr>
-        <h4 className="self-help-two-info">
-          <strong>Appropriate technology </strong>is small-scale <strong>technology</strong>
-            . It is simple enough that people can manage it directly and on a local level. <strong>Appropriate technology </strong>
-            makes use of skills and <strong>technology </strong>that are available in a local community to supply basic human needs,
-            such as gas and electricity, water, food, and waste disposal.
-        </h4>
+      <section className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div className="container self-help-two">
+          <h1><strong>Appropriate Technology</strong></h1>
+          <hr></hr>
+          <h4 className="self-help-two-info">
+            <strong>Appropriate technology </strong>is small-scale <strong>technology</strong>
+              . It is simple enough that people can manage it directly and on a local level. <strong>Appropriate technology </strong>
+              makes use of skills and <strong>technology </strong>that are available in a local community to supply basic human needs,
+              such as gas and electricity, water, food, and waste disposal.
+          </h4>
 
-        <div className="row" tabIndex="0" ref="VIEWER_REF">
-          {this.appropriateList()}
+          <div className="row" tabIndex="0" ref="VIEWER_REF">
+            {this.appropriateList()}
+          </div>
         </div>
       </section>
     );
