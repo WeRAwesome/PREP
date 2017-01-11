@@ -15,9 +15,8 @@ class SectionOne extends React.Component {
               ARE YOU PREPARED?
               <img src="../public/style/images/Home/Landing/Landing_subtitlehuman.svg" width="36px" height="36px" />
             </h4>
-            <h1 className="home-title">
-              <img src="../public/style/images/Home/Landing/Landing_title.png" />
-            </h1>
+            <img className="home-title" src="../public/style/images/Home/Landing/Landing_title.png" />
+            <h4 className="home-sub-subtitle">Prepared Resonses & Emergency Planning</h4>
           </div>
           <div className="section-one-arrow">
             <img src="../public/style/images/Home/arrow.png" width="50px" height="50px" />

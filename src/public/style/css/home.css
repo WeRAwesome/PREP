@@ -162,10 +162,18 @@ img.cover {
 	color: #f00;
 	font-weight: 400;
 }
-.home-title {
+/*.home-title {
 	font-size: 90px;
 	color: #fff;
 	font-family: "Roboto Condensed", sans-serif;
+}*/
+.home-title {
+	margin: 0 10px;
+	max-width: 100%;
+}
+.home-sub-subtitle {
+	font-size: 17px;
+	color: #fff;
 }
 /* Section Styles
 ===================================*/
@@ -182,8 +190,9 @@ img.cover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: inline-block;
-	height: 200vh;
+	height: auto;
 	width: 100%;
+	margin-bottom: 40px;
 }
 /* section-two Styles
 ====================================================*/
@@ -197,12 +206,10 @@ img.cover {
 	margin: 0 0 20px;
 	font-size: 45px;
 }
-
 .section-two-speaker {
 	position: absolute;
 	float: left;
 }
-
 .section-two {
 	background: url('../images/Home/S2_bcg.jpg');
 	background-color: #fff;
@@ -213,50 +220,101 @@ img.cover {
 	max-width: 100%;
 	padding-bottom: 120px;
 }
-
 .section-two-img img{
 	float: left;
-	margin: 10px 10px 10px 0;
+	margin: 5px 10px 0 0;
 }
-
 .section-two h3 {
 	line-height:200%;
 }
-
 .section-two-textImg {
 	text-align: center;
 	display: inline-block;
 	float: left;
 	padding: 5px;
 }
-
-#section-two-middle img {
+.section-two-middle {
 	max-width: 80%;
 	max-height: 80%;
 }
-
 .w3-btn-floating {
 	position: absolute;
 	float: left;
 	margin-right: 20px;
 	margin-top: 10px;
 }
-
 #floating-button {
 	display: block;
 	cursor:not-allowed;
 	pointer-events:none;
 	box-shadow:none;
 }
-
 #floadting-text {
   padding-bottom: 10px;
 }
-
-.text-red {
+.section-two-text {
+	font-size: 18px;
+	line-height: 1.8;
+}
+.section-two-text-red, .section-two-text-red-title {
 	color: #f00;
 }
-
+.section-two-text-red-title {
+	letter-spacing: 3px;
+}
+.section-two-text-whatis {
+	text-align: right;
+	right: 10%;
+}
+.section-two-four-col {
+	margin-bottom: 25px;
+	margin-left: 50px;
+	display: flex;
+	align-items: flex-start;
+	align-self: flex-start;
+	-webkit-align-items: flex-start;
+	-webkit-align-self: flex-start;
+}
+.section-two-four-col-step {
+	max-width: 100%;
+	margin-right: 20px;
+	padding-top: 10px;
+	width: 90px;
+}
+.section-two-four-col-img {
+	max-width: 100%;
+	padding-top: 10px;
+	width: 90px;
+}
+.section-two-person {
+	max-width: 100%;
+	position: relative;
+	/*margin: 10% 0 10% 10%;*/
+	float: left;
+	width: 18px;
+	margin: 12px 10px 12px 0px;
+}
+.section-two-person-with {
+	max-width: 100%;
+	width: 130px;
+	margin-left: 25px;
+}
+div.section-two-img-hover {
+	opacity: 0;
+}
+div.section-two-img-hover:hover{
+	opacity: 100;
+}
+.section-two-overlap img{
+	position: absolute;
+	z-index: 4;
+	display: inline;
+}
+.section-two-four-col-last {
+	max-width: 100%;
+	width: 80px;
+	margin-right: 25px;
+}
 /* section-three Styles
 ====================================================*/
 .section-three {
@@ -280,36 +338,14 @@ img.cover {
 	padding: 50px 20px 70px;
 	font-weight: 300;
 }
-
 .section-three-images img{
 	padding: 2% 8% 2%;
 	align-self: center;
-}
-
-#section-three-person {
-	position: relative;
-	margin: 10% 0 10% 10%;
-	float: left;
-	width: 50px;
-	height: 50px;
-}
-div.section-three-img-hover {
-	opacity: 0;
-}
-div.section-three-img-hover:hover{
-	opacity: 100;
-}
-.section-three-overlap img{
-	position: absolute;
-	right: 3%;
-	top: 10%;
-	z-index: 4;
 }
 .section-three-overlap h1 {
 	align-self: center;
 	align-content: center;
 	margin: 15% 8% 15% 40%;
-
 }
 .section-three-step3 img {
 	margin: 2% 8% 2% 2%;
