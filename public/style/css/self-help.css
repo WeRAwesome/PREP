@@ -1,0 +1,286 @@
+/* Cover /Jumbotron Styles
+========================================*/
+section.self-help {
+  padding-top: 70px;
+  background: url('http://www.ncsc.org/~/media/Microsites/Images/access/Anchors/self-help.ashx') 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  max-width: 100%;
+}
+.self-help-jumbotron {
+  align-self: center;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+}
+
+/* self-help-two Styles
+========================================*/
+.self-help-two {
+  padding-bottom: 130px;
+}
+.self-help-two h1 {
+  align-self: center;
+  color: #111111;
+  text-align: center;
+  text-shadow: 2px 2px #808080;
+  margin-top: 50px;
+}
+.self-help-two-info {
+  align-self: center;
+  color: #808080;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  line-height:160%;
+}
+.self-help-two-content h3{
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+}
+.self-help-two-content h5 {
+  padding: 10px;
+  color: #808080;
+  line-height: 130%;
+}
+.self-help-two-content img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 250px;
+  height: 350px;
+  margin: auto;
+}
+
+/* Modal Styles
+========================================*/
+div.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50,58,68,0.8);
+  top: 0;
+  left: 0;
+  z-index: 0;
+  margin: 0 0 0 0;
+  position: fixed;
+  display: block;
+  overflow: hidden;
+}
+
+.content {
+  background-color: white;
+   position: fixed;
+   height:100%;
+   width: 100%;
+   z-index: 1000;
+   padding-right: 0%;
+   padding-left:0%;
+   padding-top: 0%;
+   padding-bottom: 1%;
+   border-radius: 10px;
+   overflow: scroll;
+}
+
+.modal-content {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  right: 25%;
+  bottom: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  z-index:1000;
+  max-width: 100%;
+  height: auto;
+}
+
+.close-button {
+  font-size: 35px;
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 1px 0 #000;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  filter: alpha(opacity=20);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  margin-right: 0;
+}
+
+.modal {
+  left: 50%;
+  bottom: auto;
+  right: auto;
+  z-index: 1050;
+  padding: 0;
+  width: 500px;
+  margin-left: -250px;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+}
+
+.modal.container {
+  max-width: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+}
+
+/* Self-Help_01
+==============================================*/
+.self-help_title {
+  position: relative;
+}
+.self-help_title img {
+  width: 100%;
+  opacity: 0.6;
+}
+
+.self-help_title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*font-size: 40px;
+  color: #000 bold;
+  text-shadow: 2px 2px grey;*/
+  color: #000;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
+}
+
+.step-box {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.self-help_01{
+  position: relative;
+  padding: 1rem;
+  margin-top: 5px;
+}
+
+.step-num {
+  height: auto;
+  width: 70%;
+  padding: 10%;
+  background-color: #eff;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h3.sub-title {
+  background-color: #ddd;
+  padding: 5px;
+  border: 5px solid transparent;
+  text-align: center;
+  text-shadow: 2px 2px #fff;
+  border-radius: 3px;
+}
+
+fieldset.add-padding {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.textWrap-right {
+  padding: 15px;
+  float: right;
+  margin-left: 10px;
+}
+
+.textWrap-left {
+  padding: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+form img {
+  max-width: 100%;
+}
+.col-md-4 img {
+  max-width:100%;
+}
+
+.col-md-8 img {
+  max-width:100%;
+}
+
+.col-md-6 img {
+  max-width: 100%;
+}
+
+/* video style
+=========================================*/
+@media screen and (min-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .content {
+    width: 70%;
+  }
+}
+.video-youtube{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-top: 35px;
+    overflow: hidden;
+}
+
+/* Slide Float button
+================================*/
+#floating-left {
+  position:absolute;
+  top:45%;
+  left: 10px;
+}
+#floating-right {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
