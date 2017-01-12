@@ -173,9 +173,14 @@ body.modal-open,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
+  /*font-size: 40px;
   color: #000 bold;
-  text-shadow: 2px 2px grey;
+  text-shadow: 2px 2px grey;*/
+  color: #000;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
 }
 
 .step-box {

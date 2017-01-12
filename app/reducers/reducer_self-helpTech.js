@@ -10,37 +10,37 @@ export default function appropriateitems() {
     {
       id: 1,
       title: 'Get Pure Water',
-      img: '../public/style/images/Self-HelpTechnology/PurifyWater_02.jpg',
+      img: '/static/images/Self-HelpTechnology/PurifyWater_02.jpg',
       modal: SelfHelp01GetPureWater
     },
     {
       id: 2,
       title: 'A liter of Light',
-      img: '../public/style/images/Self-HelpTechnology/Liter_of_Light_04.jpg',
+      img: '/static/images/Self-HelpTechnology/Liter_of_Light_04.jpg',
       modal: SelfHelp02LitterOfLight
     },
     {
       id: 3,
       title: 'LED Power Hack',
-      img: '../public/style/images/Self-HelpTechnology/Liter_of_Light_02.jpg',
+      img: '/static/images/Self-HelpTechnology/Liter_of_Light_02.jpg',
       modal: SelfHelp03LEDPowerHack
     },
     {
       id: 4,
       title: 'Cook Stove',
-      img: '../public/style/images/Self-HelpTechnology/institutional_cookstove_main.jpg',
+      img: '/static/images/Self-HelpTechnology/institutional_cookstove_main.jpg',
       modal: SelfHelp04CookStove
     },
     {
       id: 5,
       title: 'Solar Water Disinfection',
-      img: '../public/style/images/Self-HelpTechnology/Solar_Water_Disinfection_01.jpg',
+      img: '/static/images/Self-HelpTechnology/Solar_Water_Disinfection_01.jpg',
       modal: SelfHelp05SolarWaterDisinfection
     },
     {
       id: 6,
       title: 'Pot in Pot Cooler',
-      img: '../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_01.jpg',
+      img: '/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_01.jpg',
       modal: SelfHelp06PotCooler
     },
   ];

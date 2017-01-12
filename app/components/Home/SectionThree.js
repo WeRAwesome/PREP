@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 const disaterCategory = [
-  {"category_img": "../public/style/images/Home/hydro.png"},
-  {"category_img": "../public/style/images/Home/geo.png"},
-  {"category_img": "../public/style/images/Home/climate.png"},
-  {"category_img": "../public/style/images/Home/biological.png"},
-  {"category_img": "../public/style/images/Home/humanmade.png"},
-  {"category_img": "../public/style/images/Home/circle.png"},
+  {"category_img": "/static/images/Home/hydro.png"},
+  {"category_img": "/static/images/Home/geo.png"},
+  {"category_img": "/static/images/Home/climate.png"},
+  {"category_img": "/static/images/Home/biological.png"},
+  {"category_img": "/static/images/Home/humanmade.png"},
+  {"category_img": "/static/images/Home/circle.png"},
 ]
 class SectionThree extends Component {
 

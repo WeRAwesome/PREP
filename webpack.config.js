@@ -14,7 +14,7 @@ const config = {
   devtool: debug ? "inline-sourcemap" : null,
   // devtool: 'eval',
   devServer: {
-    port: 8080,
+    port: 3000,
     hot: true,
     historyApiFallback: {
       index: '/static/'
@@ -52,7 +52,11 @@ const config = {
     new CopyWebpackPlugin([{
       from: 'public/style/images',
       to: 'images'
-    }])
+    }, {
+      from: 'public/style/fonts',
+      to: 'fonts'
+    }
+  ])
   ],
   resolve: {
     modulesDirectories: [

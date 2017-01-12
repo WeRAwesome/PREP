@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 const sectionTwoImg = [
   {
-    "step_img": "../public/style/images/Home/step1.png",
-    "info_img": "../public/style/images/Home/XMLID_271_.png"
+    "step_img": "/static/images/Home/step1.png",
+    "info_img": "/static/images/Home/XMLID_271_.png"
   }, {
-    "step_img": "../public/style/images/Home/step2.png",
-    "info_img": "../public/style/images/Home/XMLID_4041_.png"
+    "step_img": "/static/images/Home/step2.png",
+    "info_img": "/static/images/Home/XMLID_4041_.png"
   }, {
-    "step_img": "../public/style/images/Home/step3.png",
-    "info_img": "../public/style/images/Home/XMLID_4053_.png"
+    "step_img": "/static/images/Home/step3.png",
+    "info_img": "/static/images/Home/XMLID_4053_.png"
   }
 ];
 
@@ -22,9 +22,9 @@ class SectionTwo extends Component {
           <div className="section-two-img-hover section-two-overlap">
             <img
               className="section-two-person"
-              src="../public/style/images/Home/person.png"
+              src="/static/images/Home/person.png"
             />
-            <img className="section-two-person-with" src="../public/style/images/Home/XMLID_13_.png" width="130px" />
+            <img className="section-two-person-with" src="/static/images/Home/XMLID_13_.png" width="130px" />
           </div>
           <div className="section-two-four-col">
             <img className="section-two-four-col-step" src={img.step_img} />
@@ -43,11 +43,11 @@ class SectionTwo extends Component {
             <h1 className="section-two-text-whatis"><strong>What</strong> is</h1>
           </div>
           <div className="col-sm-3 col-md-3 col-lg-3 section-two-two">
-            <img className="section-two-middle" src="../public/style/images/Home/prep.png" />
+            <img className="section-two-middle" src="/static/images/Home/prep.png" />
           </div>
           <div className="col-sm-3 col-md-3 col-lg-3 section-two-img section-two-text">
             <h2>
-              <img src="../public/style/images/Home/Icon_speaker.png" />
+              <img src="/static/images/Home/Icon_speaker.png" />
               <strong className="section-two-text-red-title">P.R.E.P.</strong>
             </h2>
             <span><strong>(Pre-pared Responses and Emergency Planning)</strong> aims to raise awaremess for <strong>disaster preparedness and emergency planning</strong> with succint,
@@ -57,8 +57,8 @@ class SectionTwo extends Component {
           <div className="col-sm-4 col-md-4 col-lg-4 section-two-four">
             {this.createFourCol()}
             <div className="section-two-four-col">
-              <img className="section-two-four-col-last" src="../public/style/images/Home/svcguide.png" />
-              <img className="section-two-four-col-img" src="../public/style/images/Home/XMLID_225_.png"  />
+              <img className="section-two-four-col-last" src="/static/images/Home/svcguide.png" />
+              <img className="section-two-four-col-img" src="/static/images/Home/XMLID_225_.png"  />
             </div>
           </div>
         </div>

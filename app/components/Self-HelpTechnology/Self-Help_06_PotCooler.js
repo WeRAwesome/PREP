@@ -16,7 +16,7 @@ class SelfHelp06PotCooler extends Component {
               <h3 className="sub-title">Step 1</h3>
               <div className="row">
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_02.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_02.jpeg" />
                 </div>
                 <div className="col-md-6">
                   <h3>Obtain two large clay or terracotta pots</h3>
@@ -36,7 +36,7 @@ class SelfHelp06PotCooler extends Component {
                   <p>- Putty or duct tape can plug the hole.</p>
                 </div>
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_03.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_03.jpeg" />
                 </div>
               </div>
             </form>
@@ -45,7 +45,7 @@ class SelfHelp06PotCooler extends Component {
               <h3 className="sub-title">Step 3</h3>
               <div className="row">
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_04.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_04.jpeg" />
                 </div>
                 <div className="col-md-6">
                   <h3>Fill the base of the larger pot with coarse sand.</h3>
@@ -62,7 +62,7 @@ class SelfHelp06PotCooler extends Component {
                   <p>Arrange its base flat on top of the lower layer of sand.</p>
                 </div>
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_05.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_05.jpeg" />
                 </div>
               </div>
             </form>
@@ -71,7 +71,7 @@ class SelfHelp06PotCooler extends Component {
               <h3 className="sub-title">Step 5</h3>
               <div className="row">
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_06.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_06.jpeg" />
                 </div>
                 <div className="col-md-6">
                   <h3>Fill all around the small pot with sand.</h3>
@@ -88,7 +88,7 @@ class SelfHelp06PotCooler extends Component {
                   <p>Do this until the sand is completely soaked and unable to take any more water. As you pour, do so gradually in order to give the water time to soak into the terracotta.</p>
                 </div>
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_07.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_07.jpeg" />
                 </div>
               </div>
             </form>
@@ -97,7 +97,7 @@ class SelfHelp06PotCooler extends Component {
               <h3 className="sub-title">Step 7</h3>
               <div className="row">
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_08.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_08.jpeg" />
                 </div>
                 <div className="col-md-6">
                   <h3>Take a cloth, tea towel or towel and dip it into water</h3>
@@ -115,7 +115,7 @@ class SelfHelp06PotCooler extends Component {
                   <p>If you have a thermometer, you can use this, otherwise test the temperature with your hands.</p>
                 </div>
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_09.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_09.jpeg" />
                 </div>
               </div>
             </form>
@@ -124,7 +124,7 @@ class SelfHelp06PotCooler extends Component {
               <h3 className="sub-title">Step 9</h3>
               <div className="row">
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_10.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_10.jpeg" />
                 </div>
                 <div className="col-md-6">
                   <p>Keep the pot-in-pot refrigerator in a dry, ventilated space for the water to evaporate effectively towards the outside</p>
@@ -141,7 +141,7 @@ class SelfHelp06PotCooler extends Component {
                   <p>You can add food or drinks to the pot-in-pot refrigerator if you are having an outdoor party or picnic. Make one for the drinks and one for the food if you have a lot of items.</p>
                 </div>
                 <div className="col-md-6">
-                  <img src="../public/style/images/Self-HelpTechnology/Pot_in_Pot_Cooler_11.jpeg" />
+                  <img src="/static/images/Self-HelpTechnology/Pot_in_Pot_Cooler_11.jpeg" />
                 </div>
               </div>
             </form>
