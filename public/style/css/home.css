@@ -100,7 +100,14 @@ footer {
 	background: #fff;
 }
 */
-
+.navbar-category-text-disabled {
+	color: #c3c3c3 !important;
+}
+.navbar-category-text {
+	color: #fff !important;
+	font-size: 20px;
+	font-weight: 700;
+}
 /* Cover / Jumbotron Styles
 ** section-one
 ===================================*/

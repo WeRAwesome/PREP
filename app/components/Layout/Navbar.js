@@ -77,7 +77,7 @@ class Navbar extends React.Component {
       //const { isSelected } = this.state.category.title;
       return (
         <li key={category.title}>
-          <Link to={category.to}>{category.parent_category}</Link>
+          <Link className="navbar-category-text-disabled" to="">{category.parent_category}</Link>
         </li>
       );
     });
@@ -113,6 +113,7 @@ class Navbar extends React.Component {
       			<div id="navbar" class="navbar-collapse collapse">
       				<ul className="nav navbar-nav navbar-right w3-topnav">
                 { this.renderNavList() }
+                <li><Link className="navbar-category-text" to="selfhelp">SELF-HELP TECH</Link></li>
       				</ul>
       			</div>
       		</div>
