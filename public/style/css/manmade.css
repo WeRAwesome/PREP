@@ -1,0 +1,11 @@
+/* Cover /Jumbotron Styles For manmade
+========================================*/
+section.manmade {
+  padding-top: 70px;
+  background: url('http://img.timeinc.net/time/2007/top_10_photos/manmade_brazi_plane_crash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  max-width: 100%;
+}

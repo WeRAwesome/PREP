@@ -1,0 +1,11 @@
+/* Cover /Jumbotron Styles For Bio
+========================================*/
+section.bio {
+  padding-top: 70px;
+  background: url('http://cdn.grindtv.com/wp-content/uploads/2013/07/cloud-of-mosquitos-.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  max-width: 100%;
+}
