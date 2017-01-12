@@ -95,7 +95,9 @@ class SelfHelpS2 extends Component {
             isOpen={this.state.modalIsOpen === item.id}
             onRequestClose={this.closeModal}
             style={customStyles}
-            onChange={this.slide}>
+            onChange={this.slide}
+            contentLabel="Modal"
+            >
               <button type="button" class="close-button" data-dismiss="modal" onClick={this.closeModal}>&times;</button>
                 <div className="modal-content">
                   <ModalComponent />
