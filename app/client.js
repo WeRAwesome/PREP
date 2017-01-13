@@ -7,6 +7,7 @@ import '../public/style/css/climato.css';
 import '../public/style/css/geo.css';
 import '../public/style/css/manmade.css';
 import '../public/style/css/hydro.css';
+import '../public/style/css/w3.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
