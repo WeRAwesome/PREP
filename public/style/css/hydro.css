@@ -9,3 +9,27 @@ section.hydro {
   display: flex;
   max-width: 100%;
 }
+
+/* Flood Styles
+========================================*/
+.stay-informed-num {
+  position: relative;
+  width: 100%; /* for IE 6 */
+  margin: 20px 0;
+}
+.stay-informed-num span {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  position: absolute;
+}
+.stay-informed-num-text {
+  position: absolute;
+  left: 0;
+  padding-left: 7px;
+}
+.stay-informed-num-img {
+  max-width: 100%;
+  width: 250px;
+  padding: 20px;
+}

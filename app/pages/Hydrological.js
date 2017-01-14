@@ -1,13 +1,14 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
+
+import StayInformed from '../components/Hydrological/StayInformed';
 
 class Hydrological extends Component {
   render () {
     return (
-      <section className="hydro">
-        <div className="jumbotron">
-          <h1>Hydrological Page</h1>
-        </div>
-      </section>
+      <div>
+      <section className="hydro" />
+      <StayInformed />
+      </div>
     );
   }
 }

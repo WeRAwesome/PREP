@@ -83,15 +83,15 @@ export default function categories() {
       to: 'manmade',
       child_categories: []
     },
-    // {
-    //   id: 6,
-    //   title: 'SELF-HELP TECHNOLOGY',
-    //   parent_category: 'SELF-HELP TECH',
-    //   to: 'selfhelp',
-    //   child_categories: [{
-    //     category: 'appropriate Tech',
-    //     to: 'appropriatetech'
-    //   }]
-    // }
+    {
+      id: 6,
+      title: 'SELF-HELP TECHNOLOGY',
+      parent_category: 'SELF-HELP TECH',
+      to: 'selfhelp',
+      child_categories: [{
+        category: 'appropriate Tech',
+        to: 'appropriatetech'
+      }]
+    }
   ];
 }
