@@ -2,6 +2,22 @@ export default function categories() {
   return [
     {
       id: 1,
+      title: 'HYDROLOGICAL',
+      parent_category: 'HYDRO',
+      to: 'hydro',
+      child_categories: [
+        {
+          category: 'Flood',
+          to: 'flood'
+        },
+        {
+          category: 'Mass Movement(WET)',
+          to: 'wet'
+        }
+      ]
+    },
+    {
+      id: 2,
       title: 'GEOPHYSICAL',
       parent_category: 'GEO',
       to: 'geo',
@@ -17,22 +33,6 @@ export default function categories() {
         {
           category: 'Mass Movement(DRY)',
           to: 'dry'
-        }
-      ]
-    },
-    {
-      id: 2,
-      title: 'HYDROLOGICAL',
-      parent_category: 'HYDRO',
-      to: 'hydro',
-      child_categories: [
-        {
-          category: 'Flood',
-          to: 'flood'
-        },
-        {
-          category: 'Mass Movement(WET)',
-          to: 'wet'
         }
       ]
     },

@@ -1,10 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Navbar from '../Layout/Navbar';
 
-class SectionOne extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class SectionOne extends Component {
 
   render(){
     return (

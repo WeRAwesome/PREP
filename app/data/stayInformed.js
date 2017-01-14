@@ -1,6 +1,7 @@
 const stayInformed = [
   {
-    "id": "01",
+    "id": 1,
+    "num_img": "/static/images/Home/Number-1.png",
     "title": "Risks & Hazards",
     "images": [
       "/static/images/Home/Landing/Flood_01.png",

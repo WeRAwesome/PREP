@@ -1,40 +1,60 @@
 /* Cover /Jumbotron Styles For Hydro
 ========================================*/
-.flood-main {
-  margin-top: 50px;
-  max-width: 100%;
-  height: 70vh;
-}
-.hydro-title {
-  display: flex;
-  right: 50px;
-  float: right;
+.flood-header {
+  margin-top: 60px;
+  position: relative;
   text-align: right;
-  align-self: right;
-  font-size: 100px;
+}
+.flood-header img {
+  width: 100vw;
+  height: 350px;
+}
+.flood-header-text {
+  top: 30%;
+  right: 20%;
+  position: absolute;
   color: #fff;
-  width: 100%;
+  display: block;
+}
+.flood-second img {
+  width: 100vw;
+}
+.flood-sub-title {
+  font-style: italic;
+  font-weight: 200;
+  padding-right: 55%;
+}
+.flood-title {
+  font-size: 90px;
 }
 /* Flood Styles
 ========================================*/
+.stay-informed-container {
+  margin: auto;
+}
 .stay-informed-num {
   position: relative;
   width: 100%; /* for IE 6 */
-  margin: 20px 0;
   font-style: italic;
+  display: flex;
+  align-items: center;
 }
 .stay-informed-num span {
   font-size: 22px;
   color: #000;
   position: absolute;
+  padding-top: 15px;
+  padding-left:65px;
 }
 .stay-informed-num-text {
   position: absolute;
-  left: 0;
-  padding-left: 7px;
+  left: 10;
 }
-.stay-informed-num-img {
+.stay-informed-img {
   max-width: 100%;
-  width: 250px;
-  padding: 20px;
+  padding: 3%;
+  margin: auto;
+}
+.stay-informed-img-container img {
+  width: 25%;
 }

@@ -8,18 +8,19 @@ class StayInformed extends Component {
     return stayInformed.map((data) => {
       const renderImages = data.images.map((img, i) => {
         return (
-          <img key={i} className="col-xs-3 stay-informed-num-img" src={img} />
+          <img key={i} className="stay-informed-img" src={img} />
         );
       });
 
       return (
         <div key={data.id}>
           <div className="stay-informed-num">
-            <img src="/static/images/Home/Landing/Tag_Icon.png" width="50px" />
-            <span className="stay-informed-num-text">{data.id}</span>
+            <img src={data.num_img} width="60px" />
             <span>{data.title}</span>
           </div>
-          {renderImages}
+          <div className="stay-informed-img-container">
+            {renderImages}
+          </div>
         </div>
       )
     });
@@ -27,7 +28,7 @@ class StayInformed extends Component {
 
   render() {
     return(
-      <div className="container">
+      <div className="container stay-informed-container">
         {this.renderStayInformed()}
       </div>
     );
