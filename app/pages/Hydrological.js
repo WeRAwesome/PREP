@@ -6,7 +6,11 @@ class Hydrological extends Component {
   render () {
     return (
       <div>
-      <section className="hydro" />
+      <div className="">
+        <img className="" src="/static/images/Home/Flood_header.png" />
+        <h1 className="hydro-title">Flood</h1>
+        <img src="/static/images/Home/flood-landing.png" />
+      </div>
       <StayInformed />
       </div>
     );
