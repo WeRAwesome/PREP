@@ -124,7 +124,7 @@ section.cover {
 .section-one {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background: url('/static/images/Home/Landing/Landing_header1.png');
+	background: url('/static/images/Home/Landing/Landing_header.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: inline-block;

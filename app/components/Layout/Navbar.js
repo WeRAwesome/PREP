@@ -118,7 +118,6 @@ class Navbar extends Component {
       			<div id="navbar" class="navbar-collapse collapse">
       				<ul className="nav navbar-nav navbar-right w3-topnav">
                 { this.renderNavList() }
-                <li><Link className="navbar-category-text" to="selfhelp">SELF-HELP TECH</Link></li>
       				</ul>
       			</div>
       		</div>
