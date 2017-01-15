@@ -121,6 +121,9 @@ section.cover {
 	max-width: 100%;
 }
 */
+#overlay-relative {
+	position: relative;
+}
 .section-one {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -207,7 +210,7 @@ img.cover {
 	font-size: 50px;
 	text-align: center;
 }
-.section-two-three-background {
+.section-two-three {
 	background: url('/static/images/Home/Landing_bcg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -215,6 +218,19 @@ img.cover {
 	height: auto;
 	width: 100%;
 	padding-bottom: 40px;
+}
+.section-two-three-background {
+	position: relative;
+}
+.section-two-three-background .size-100{
+	position: absolute;
+	display: flex;
+	width: 100vw;
+	height: auto;
+	max-height: 1500px;
+}
+#overlay-absolute {
+	position: absolute;
 }
 /* section-two Styles
 ====================================================*/
@@ -224,7 +240,7 @@ img.cover {
 	color: #000;
 	font-weight: 300;
 }
-.section-two-content h1 {
+.section-two-content{
 	margin: 0 0 20px;
 	font-size: 45px;
 }
@@ -408,6 +424,10 @@ img.cover {
 .section-three {
 	color: #000;
 	padding-bottom: 50px;
+}
+.section-three-image-size img {
+	width: 16.6%;
+	padding: 1%;
 }
 .section-three-title{
 	align-self: center;

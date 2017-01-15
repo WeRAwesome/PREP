@@ -9,6 +9,7 @@ class Home extends Component {
       <div>
         <SectionOne />
         <div className="section-two-three-background">
+          <img className="size-100" src="/static/images/Home/Landing_bcg.png" />
           <SectionTwo />
           <SectionThree />
         </div>

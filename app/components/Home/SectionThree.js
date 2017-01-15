@@ -13,19 +13,19 @@ class SectionThree extends Component {
   renderDisasterCategory() {
     return disaterCategory.map((category, i) => {
       return (
-        <div key={i} className="col-xs-2">
-          <img className="section-three-disaster-category-img" src={category.category_img} />
-        </div>
+        <img key={i} className="section-three-disaster-category-img" src={category.category_img} />
       )
     });
   }
   render(){
     return (
-      <div className="container section-three">
-        <p className="section-three-title">Prepare NOW</p>
-        <p className="section-three-description">per Disaster Category</p>
-        <div className="row">
-          {this.renderDisasterCategory()}
+      <div className="container">
+        <div className="section-three" id="overlay-absolute">
+          <p className="section-three-title">Prepare NOW</p>
+          <p className="section-three-description">per Disaster Category</p>
+          <div className="container section-three-image-size">
+            {this.renderDisasterCategory()}
+          </div>
         </div>
       </div>
     )
