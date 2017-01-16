@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 const sectionTwoImg = [
   {
     "step_img": "/static/images/Home/step1.png",
-    "info_img": "/static/images/Home/XMLID_271_.png"
+    "info_img": "/static/images/Home/AssetStay_informed.png"
   }, {
     "step_img": "/static/images/Home/step2.png",
-    "info_img": "/static/images/Home/XMLID_4041_.png"
+    "info_img": "/static/images/Home/AssetMake_a_plan.png"
   }, {
     "step_img": "/static/images/Home/step3.png",
-    "info_img": "/static/images/Home/XMLID_4053_.png"
+    "info_img": "/static/images/Home/AssetStay_informed.png"
   }
 ];
 
@@ -58,7 +58,7 @@ class SectionTwo extends Component {
             {this.createFourCol()}
             <div className="section-two-four-col">
               <img className="section-two-four-col-last" src="/static/images/Home/svcguide.png" />
-              <img className="section-two-four-col-img" src="/static/images/Home/XMLID_225_.png"  />
+              <img className="section-two-four-col-img" src="/static/images/Home/AssetVisual_Guide.png"  />
             </div>
           </div>
         </div>

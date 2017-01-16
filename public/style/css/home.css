@@ -327,8 +327,8 @@ img.cover {
 }
 .section-two-four-col-img {
 	max-width: 100%;
-	padding-top: 10px;
-	width: 120px;
+	/*padding-top: 10px;
+	width: 120px;*/
 	padding-right: 30px;
 }
 .section-two-person {
@@ -427,7 +427,6 @@ img.cover {
 }
 .section-three-image-size img {
 	width: 16.6%;
-	padding: 1%;
 }
 .section-three-title{
 	align-self: center;

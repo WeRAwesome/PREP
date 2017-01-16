@@ -9,7 +9,7 @@ class Home extends Component {
       <div>
         <SectionOne />
         <section className="section-two-three-background">
-          <img className="size-100" src="/static/images/Home/Landing_bcg.png" />
+          <img className="size-100" src="/static/images/Home/bcg.png" />
           <SectionTwo />
           <SectionThree />
         </section>

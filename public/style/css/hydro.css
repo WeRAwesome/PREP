@@ -31,6 +31,7 @@
 ========================================*/
 .stay-informed-container {
   margin: auto;
+  padding: 50px;
 }
 .stay-informed-num {
   position: relative;
@@ -52,7 +53,7 @@
 }
 .stay-informed-img {
   max-width: 100%;
-  padding: 3%;
+  padding: 1%;
   margin: auto;
 }
 .stay-informed-img-container img {

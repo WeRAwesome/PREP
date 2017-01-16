@@ -6,7 +6,7 @@ const disaterCategory = [
   {"category_img": "/static/images/Home/Symbol_Climato.png"},
   {"category_img": "/static/images/Home/Symbol_Bio.png"},
   {"category_img": "/static/images/Home/Symbol_Human.png"},
-  {"category_img": "/static/images/Home/circle.png"},
+  {"category_img": "/static/images/Home/Symbol_Human.png"},
 ]
 class SectionThree extends Component {
 
