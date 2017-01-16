@@ -19,7 +19,7 @@ class SectionThree extends Component {
   }
   render(){
     return (
-      <div className="container">
+      <section className="container">
         <div className="section-three" id="overlay-absolute">
           <p className="section-three-title">Prepare NOW</p>
           <p className="section-three-description">per Disaster Category</p>
@@ -27,7 +27,7 @@ class SectionThree extends Component {
             {this.renderDisasterCategory()}
           </div>
         </div>
-      </div>
+      </section>
     )
   }
 }

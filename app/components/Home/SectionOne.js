@@ -6,7 +6,7 @@ class SectionOne extends Component {
   render(){
     return (
       <div className="section-one" id="spytop">
-        <section className="container" id="overlay-relative">
+        <section className="container">
           <div className="section-one-title">
             <h4 className="home-subtitle">
               ARE YOU PREPARED?
