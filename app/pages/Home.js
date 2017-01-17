@@ -8,10 +8,11 @@ class Home extends Component {
     return (
       <div>
         <SectionOne />
-        <div className="section-two-three-background">
+        <section className="section-two-three-background">
+          <img className="size-100" src="/static/images/Home/bcg.png" />
           <SectionTwo />
           <SectionThree />
-        </div>
+        </section>
       </div>
     );
   }
